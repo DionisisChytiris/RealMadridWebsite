@@ -34,6 +34,7 @@ const NavBar = () => {
         <a>RM Play</a>
       </div>
       <div className="nav3">NavBar</div>
+      <div className="nav3">NavBar</div>
     </div>
   );
 };
