@@ -1,14 +1,54 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IconContext } from "react-icons";
+import { DiBackbone } from "react-icons/di";
 
 const NavBar = () => {
+  const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
+  const [top, setTop] = useState(0);
+
+
+  useEffect(() => {
+    // Function to handle scroll events
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      if (prevScrollpos > currentScrollPos) {
+        setTop(0); // Show navbar
+      } else {
+        setTop(-63); // Hide navbar
+      }
+      setPrevScrollpos(currentScrollPos);
+    };
+    // Add scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+    // Clean up by removing the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollpos]);
+
+  const navbarStyle = {
+    position: 'fixed',
+    top: `${top}px`,
+    transition: 'top 0.8s',
+    display: 'flex',
+    backgroundColor: 'var(--white)',
+    width: '100%',
+    height: '63px',
+    padding: '0px 40px',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderBottom: '1px solid var(--lightgray1)',
+  };
+
   return (
-    <div className="navbar">
-      <div className="nav1">
+    <div  style={navbarStyle}>
+    {/* <div className="navbar" style={navbarStyle}> */}
+      {/* <div style={linkStyle}> */}
+      <div className="nav1" >
         <div>
           <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
         </div>
@@ -37,11 +77,12 @@ const NavBar = () => {
         <a>RM Play</a>
       </div>
       <div className="nav3">
-        <div className="icons">
-          <img src={assets.emirates} alt="" className="emiratesIcon" />
-          <img src={assets.adidas} alt="" className="adidasIcon" />
-        </div>
-        <div>.</div>
+
+          <div className="icons">
+            <img src={assets.emirates} alt="" className="emiratesIcon" />
+            <img src={assets.adidas} alt="" className="adidasIcon" />
+            <div>.</div>
+          </div>
         <div className="signIn">Sign In</div>
       </div>
     </div>

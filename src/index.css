@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --white: #ffffff;
+  --lightgray1: #e1e5ea;
+  --blue: blue;
+  --darkblue: #43526e;
+  --gray: gray;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +29,7 @@ a {
 .app {
   width: 80%;
   margin: auto;
+  margin-top: 70px;
 }
 
 @keyframes fadeIn {
