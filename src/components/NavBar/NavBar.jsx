@@ -9,13 +9,16 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="nav1">
-        <div className="icon">
+        <div>
+          <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
+        </div>
+        {/* <div className="icon">
           <IconContext.Provider value={{ color: "#43526e", size: "25px" }}>
             <div>
               <RxHamburgerMenu />
             </div>
           </IconContext.Provider>
-        </div>
+        </div> */}
 
         <img src={assets.real_logo} alt="Logo" />
         <div className="line" />
@@ -33,8 +36,14 @@ const NavBar = () => {
         <a>Shop</a>
         <a>RM Play</a>
       </div>
-      <div className="nav3">NavBar</div>
-      <div className="nav3">NavBar</div>
+      <div className="nav3">
+        <div className="icons">
+          <img src={assets.emirates} alt="" className="emiratesIcon" />
+          <img src={assets.adidas} alt="" className="adidasIcon" />
+        </div>
+        <div>.</div>
+        <div className="signIn">Sign In</div>
+      </div>
     </div>
   );
 };
