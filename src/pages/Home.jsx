@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import RealMadrid from './RealMadrid'
+import RealMadrid from './SectionLarge/RealMadrid'
 
 const Home = () => {
   return (

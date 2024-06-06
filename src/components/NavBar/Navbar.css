@@ -1,6 +1,6 @@
 .navbar {
-    display: flex;
     /* background-color: #ffffff; */
+    display: flex;
     background-color: var(--white);
     height: 63px;
     padding: 0px 40px;
@@ -25,11 +25,9 @@ img {
 .menuIcon{
     width: 32px;
     height: 32px; 
-    fill: var(--darkblue)
+    /* fill: var(--darkblue) */
 }
-.menuIcon:hover {
-    color: #f2f735;
-}
+
 .nav2{
     display: flex;
 }

@@ -3,6 +3,7 @@ import real_trophy from './CABECERA.png'
 import hamburgerMenu from './svg/hamburger-menu-svgrepo-com.svg'
 import emirates from './svg/emirates_gray.svg'
 import adidas from './svg/adidas_gray.svg'
+import president from './img1.png'
 
 
 export const assets = {
@@ -10,5 +11,6 @@ export const assets = {
     real_trophy,
     hamburgerMenu,
     emirates,
-    adidas
+    adidas,
+    president,
 }

@@ -3,8 +3,10 @@
 :root {
   --white: #ffffff;
   --lightgray1: #e1e5ea;
+  --lightgray2: #f5f6f9;
   --blue: blue;
   --darkblue: #43526e;
+  --darkblue2: #3e31f4;
   --gray: gray;
 }
 
@@ -27,7 +29,7 @@ a {
 }
 
 .app {
-  width: 80%;
+  width: 85%;
   margin: auto;
   margin-top: 70px;
 }
