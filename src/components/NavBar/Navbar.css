@@ -1,5 +1,6 @@
 .navbar {
     /* background-color: #ffffff; */
+    position: relative;
     display: flex;
     background-color: var(--white);
     height: 63px;
@@ -7,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--lightgray1);
+    z-index: 9999;
 }
 .nav1{
     display: flex;

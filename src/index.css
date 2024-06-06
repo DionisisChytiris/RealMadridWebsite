@@ -4,8 +4,10 @@
   --white: #ffffff;
   --lightgray1: #e1e5ea;
   --lightgray2: #f5f6f9;
+  --lightgray3: #e1e4e9;
   --blue: blue;
-  --darkblue: #43526e;
+  --darkblue: #2a4471;
+  --darkblue1:rgb(32, 64, 109);
   --darkblue2: #3e31f4;
   --gray: gray;
 }
@@ -29,9 +31,9 @@ a {
 }
 
 .app {
-  width: 85%;
-  margin: auto;
-  margin-top: 70px;
+  /* width: 85%;
+  margin: auto; */
+  margin-top: 100px;
 }
 
 @keyframes fadeIn {

@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -59,8 +60,9 @@ const NavBar = () => {
             </div>
           </IconContext.Provider>
         </div> */}
-
-        <img src={assets.real_logo} alt="Logo" />
+        <Link to="/">
+          <img src={assets.real_logo} alt="Logo" />
+        </Link>
         <div className="line" />
         <img
           style={{ width: " 38px", height: "38px " }}
@@ -69,18 +71,22 @@ const NavBar = () => {
         />
       </div>
       <div className="nav2">
-        <a>Madridistas</a>
-        <a>Tickets</a>
-        <a>Hospitality</a>
-        <a>Tour</a>
-        <a>Shop</a>
-        <a>RM Play</a>
+        <Link to="/madridistas">Madridistas</Link>
+        <Link to="/tickets">Tickets</Link>
+        <Link to="/hospitality">Hospitality</Link>
+        <Link to="/tour">Tour</Link>
+        <Link to="/shop">Shop</Link>
+        <Link to="/rmplay">RM Play</Link>
       </div>
       <div className="nav3">
 
           <div className="icons">
-            <img src={assets.emirates} alt="" className="emiratesIcon" />
-            <img src={assets.adidas} alt="" className="adidasIcon" />
+            <a href="https://www.emirates.com/us/english/" target="_blank">
+              <img src={assets.emirates} alt="" className="emiratesIcon" />
+            </a>
+            <a href="https://www.adidas.co.uk/football" target="_blank">
+              <img src={assets.adidas} alt="" className="adidasIcon" />
+            </a>
             <div>.</div>
           </div>
         <div className="signIn">Sign In</div>
