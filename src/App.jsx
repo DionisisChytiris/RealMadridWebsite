@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/Home/HomePage";
 import { Madridistas, Tickets, Hospitality, Tour, Shop, RMPlay } from "./pages/NavPages";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/rmplay" element={<RMPlay/>} />
         </Routes>
       </div>
+      <Footer/>
     </>
   );
 }

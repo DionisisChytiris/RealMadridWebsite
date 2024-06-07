@@ -1,0 +1,35 @@
+.appDownload {
+  text-align: center;
+  width: 85%;
+  padding: 20px 0px;
+  margin: auto;
+  border-bottom: 1px solid var(--lightgray1);
+}
+.appDownload .text1 {
+  margin-top: 9px;
+  font-size: 14px;
+  color: var(--grayblue);
+  font-weight: 500;
+}
+.appDownload .text2 {
+  font-size: 14px;
+  color: var(--darkblue);
+  font-weight: 600;
+}
+.appDownload .logos {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: 110px;
+  margin-bottom: 15px;
+}
+.appDownload img {
+  width: 200px;
+  height: 150px;
+}
+img.apple {
+  width: 210px;
+  height: 155px;
+}

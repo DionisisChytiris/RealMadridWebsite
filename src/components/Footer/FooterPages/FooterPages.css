@@ -1,0 +1,9 @@
+.footerPages{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 85%;
+  margin: auto;
+  border-bottom: 1px solid var(--lightgray1);
+}

@@ -6,6 +6,7 @@ import { assets } from "../../assets/assets";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IconContext } from "react-icons";
 import { DiBackbone } from "react-icons/di";
+import { FaRegUser } from "react-icons/fa6";
 
 const NavBar = () => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -53,13 +54,6 @@ const NavBar = () => {
         <div>
           <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
         </div>
-        {/* <div className="icon">
-          <IconContext.Provider value={{ color: "#43526e", size: "25px" }}>
-            <div>
-              <RxHamburgerMenu />
-            </div>
-          </IconContext.Provider>
-        </div> */}
         <Link to="/">
           <img src={assets.real_logo} alt="Logo" />
         </Link>
@@ -89,7 +83,12 @@ const NavBar = () => {
             </a>
             <div>.</div>
           </div>
-        <div className="signIn">Sign In</div>
+        <div className="signIn">
+          <div>
+          <FaRegUser color="blue" size={14}/>
+          </div>
+          <div className="signTitle">Sign in</div>
+        </div>
       </div>
     </div>
   );

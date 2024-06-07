@@ -1,78 +1,87 @@
 .navbar {
-    /* background-color: #ffffff; */
-    position: relative;
-    display: flex;
-    background-color: var(--white);
-    height: 63px;
-    padding: 0px 40px;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--lightgray1);
-    z-index: 9999;
+  /* background-color: #ffffff; */
+  position: relative;
+  display: flex;
+  background-color: var(--white);
+  height: 63px;
+  padding: 0px 40px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--lightgray1);
+  z-index: 9999;
 }
-.nav1{
-    display: flex;
-    align-items: center;
-    gap: 15px
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-.nav1 .line{
-    background-color: var(--lightgray1);
-    width: 1px;
-    height: 30px;
+.nav1 .line {
+  background-color: var(--lightgray1);
+  width: 1px;
+  height: 30px;
 }
 img {
   width: 43px;
-  height: 45px; 
+  height: 45px;
 }
-.menuIcon{
-    width: 32px;
-    height: 32px; 
-    /* fill: var(--darkblue) */
-}
-
-.nav2{
-    display: flex;
-}
-.nav2 a{
-    padding: 10px 12px;
-    font-size: 16px;
-    /* font-family: Arial, Helvetica; */
-    color: var(--darkblue);
-    font-weight: 600;
-}
-.nav2 a:hover{
-    color: var(--blue)
-}
-.nav3{
-    display: flex;
-    align-items: center;
-}
-.icons{
-    display: flex;
-    gap: 30px;
-    margin-right: 20px
-}
-.emiratesIcon{
-    width: 50px;
-    height: 50px; 
-}
-.adidasIcon{
-    width: 50px;
-    height: 50px; 
-}
-.signIn{
-   width: 90px;
-    background-color: var(--gray);
-    /* margin-left: 10px; */
+.menuIcon {
+  width: 32px;
+  height: 32px;
+  /* fill: var(--darkblue) */
 }
 
+.nav2 {
+  display: flex;
+}
+.nav2 a {
+  padding: 10px 12px;
+  font-size: 16px;
+  /* font-family: Arial, Helvetica; */
+  color: var(--darkblue);
+  font-weight: 600;
+}
+.nav2 a:hover {
+  color: var(--blue);
+}
+.nav3 {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+.emiratesIcon {
+  width: 50px;
+  height: 50px;
+}
+.adidasIcon {
+  width: 50px;
+  height: 50px;
+}
+.signIn {
+  display: flex;
+  gap: 8px;
+  width: 90px;
+  padding: 7px 8px;
+  justify-content: center;
+  /* background-color: var(--gray); */
+  border: 2px solid blue;
+  border-radius: 8px;
+  /* margin-left: 10px; */
+}
+.signTitle {
+  font-size: 14px;
+  color: blue;
+  font-weight: 500;
+}
 
-@media (max-width:1080px) {
-    .nav2 {
-        display: none;
-    }
-    .icons {
-        display: none;
-
-    }
+@media (max-width: 1080px) {
+  .nav2 {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
 }

@@ -1,0 +1,27 @@
+.sponsors {
+  text-align: center;
+  padding: 50px;
+  border-bottom: 1px solid var(--lightgray1);
+}
+.sponsors1 {
+  /* display: block; */
+  /* gap: 40px; */
+}
+.sponsors1 img {
+  width: 150px;
+  height: 100px;
+}
+.sponsors2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+  margin: 20px auto;
+  gap: 30px;
+}
+.sponsors2 img {
+  width: 65px;
+  height: 65px;
+}

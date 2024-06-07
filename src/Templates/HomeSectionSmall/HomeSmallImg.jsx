@@ -32,7 +32,7 @@ const HomeSmallImg = () => {
       <div>
         <SmallImgItem img={assets.img5} title='Test 5'/>
       </div>
-      <div>
+      {/* <div>
         <SmallImgItem img={assets.img6} title='Test 6'/>
       </div>
       <div>
@@ -43,7 +43,7 @@ const HomeSmallImg = () => {
       </div>
       <div>
         <SmallImgItem img={assets.president} title='Test 9'/>
-      </div>
+      </div> */}
     </div>
   );
 };

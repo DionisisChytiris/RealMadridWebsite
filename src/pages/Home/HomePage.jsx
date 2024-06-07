@@ -10,14 +10,14 @@ const DivideLine = () => {
 
 const HomePage = () => {
   return (
-    <>
+    <div className="homeContainer">
       <FirstPost />
       <DivideLine />
       <SecondPost/>
       <DivideLine />
       <SecondPost/>
       <DivideLine />
-    </>
+    </div>
   );
 };
 
