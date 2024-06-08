@@ -1,9 +1,10 @@
+
 .navbar {
   /* background-color: #ffffff; */
   position: relative;
   display: flex;
   background-color: var(--white);
-  height: 63px;
+  height: 65px;
   padding: 0px 40px;
   align-items: center;
   justify-content: space-between;
@@ -78,6 +79,9 @@ img {
 }
 
 @media (max-width: 1080px) {
+  .navbar{
+    /* padding: 0px 20px; */
+  }
   .nav2 {
     display: none;
   }

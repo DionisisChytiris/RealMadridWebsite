@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
@@ -11,7 +11,6 @@ import { FaRegUser } from "react-icons/fa6";
 const NavBar = () => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
   const [top, setTop] = useState(0);
-
 
   useEffect(() => {
     // Function to handle scroll events
@@ -25,32 +24,30 @@ const NavBar = () => {
       setPrevScrollpos(currentScrollPos);
     };
     // Add scroll event listener when the component mounts
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Clean up by removing the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollpos]);
 
   const navbarStyle = {
-    position: 'fixed',
+    position: "fixed",
     top: `${top}px`,
-    transition: 'top 0.8s',
-    display: 'flex',
-    backgroundColor: 'var(--white)',
-    width: '100%',
-    height: '63px',
-    padding: '0px 40px',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    borderBottom: '1px solid var(--lightgray1)',
+    transition: "top 0.8s",
+    display: "flex",
+    backgroundColor: "var(--white)",
+    width: "100%",
+    height: "63px",
+    padding: "0px 30px",
+    alignItems: "center",
+    justifyContent: "space-between",
+    borderBottom: "1px solid var(--lightgray1)",
   };
 
-  return (
-    <div  style={navbarStyle}>
-    {/* <div className="navbar" style={navbarStyle}> */}
-      {/* <div style={linkStyle}> */}
-      <div className="nav1" >
+  return (  
+    <div style={navbarStyle}>
+      <div className="nav1">
         <div>
           <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
         </div>
@@ -73,19 +70,18 @@ const NavBar = () => {
         <Link to="/rmplay">RM Play</Link>
       </div>
       <div className="nav3">
-
-          <div className="icons">
-            <a href="https://www.emirates.com/us/english/" target="_blank">
-              <img src={assets.emirates} alt="" className="emiratesIcon" />
-            </a>
-            <a href="https://www.adidas.co.uk/football" target="_blank">
-              <img src={assets.adidas} alt="" className="adidasIcon" />
-            </a>
-            <div>.</div>
-          </div>
+        <div className="icons">
+          <a href="https://www.emirates.com/us/english/" target="_blank">
+            <img src={assets.emirates} alt="" className="emiratesIcon" />
+          </a>
+          <a href="https://www.adidas.co.uk/football" target="_blank">
+            <img src={assets.adidas} alt="" className="adidasIcon" />
+          </a>
+          <div>.</div>
+        </div>
         <div className="signIn">
           <div>
-          <FaRegUser color="blue" size={14}/>
+            <FaRegUser color="blue" size={14} />
           </div>
           <div className="signTitle">Sign in</div>
         </div>
