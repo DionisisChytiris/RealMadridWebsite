@@ -1,6 +1,15 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  position: relative;
+  /* width: 80%;
+  margin: 50px auto; */
+}
+.part1 {
+  overflow: hidden;
+  display: inline-block;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .part1 img {
@@ -9,7 +18,7 @@
   width: 100%;
   height: 100%;
   transform: scale(1, 1);
-  transition: 1.5s;
+  transition: 1.8s;
 
   &:hover {
     transform: scale(1.05, 1.05);
@@ -31,15 +40,18 @@
   font-weight: 700;
   padding: 0px 40px;
 }
+.title:hover{
+  color: red
+}
 
 @media (max-width: 1050px) {
   .container {
     display: block;
   }
-  .part1 img{
+  .part1 {
     border-radius: 25px;
   }
-  .part2  {
+  .part2 {
     display: flex;
     justify-content: flex-start;
     background-color: var(--white);
@@ -49,5 +61,4 @@
     font-weight: 700;
     padding: 10px 0px;
   }
-  
 }

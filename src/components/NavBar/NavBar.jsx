@@ -39,6 +39,7 @@ const NavBar = () => {
     backgroundColor: "var(--white)",
     width: "100%",
     height: "63px",
+    zIndex: 9999,
     padding: "0px 30px",
     alignItems: "center",
     justifyContent: "space-between",

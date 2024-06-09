@@ -1,49 +1,42 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { assets } from "../../assets/assets";
 import "./HomeSmallImg.css";
+import { Link } from "react-router-dom";
+import Posts from "../../../data/PostNews/Posts";
 
-const SmallImgItem = ({img, title}) => {
+const SmallImgItem = ({ link, img, alt, title }) => {
   return (
-    <div className="containerSmlImg">
-      <div className="imgBox">
-        <img src={img} alt="" />
+    <Link to={link}>
+      <div className="containerSmlImg">
+        <div className="imgBox">
+          <img src={img} alt={alt} />
+        </div>
+        <div className="titleBox">
+          <div className="title">{title}</div>
+        </div>
       </div>
-      <div className="titleBox">
-        <div className="title">{title}</div>
-      </div>
-    </div>
+    </Link>
   );
 };
 
 const HomeSmallImg = () => {
+  const data = Posts.filter((item) => item.type == "b");
   return (
     <div className="mainContainer">
-      <div>
-        <SmallImgItem img={assets.img2} title='Test 1'/>
-      </div>
-      <div>
-        <SmallImgItem img={assets.img3} title='Test 2'/>
-      </div>
-      <div>
-        <SmallImgItem img={assets.img4} title='Test 4'/>
-      </div>
-      <div>
-        <SmallImgItem img={assets.img5} title='Test 5'/>
-      </div>
-      {/* <div>
-        <SmallImgItem img={assets.img6} title='Test 6'/>
-      </div>
-      <div>
-        <SmallImgItem img={assets.img7} title='Test 7'/>
-      </div>
-      <div>
-        <SmallImgItem img={assets.mbappe} title='Test 8'/>
-      </div>
-      <div>
-        <SmallImgItem img={assets.president} title='Test 9'/>
-      </div> */}
+      {data.map((item, index) => {
+        return (
+          <div key={index}>
+            <SmallImgItem
+              link={item.link}
+              img={item.img}
+              alt={item.alt}
+              title={item.title}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };

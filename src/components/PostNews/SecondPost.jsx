@@ -1,14 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import HomeSmallImg from "../../Templates/HomeSectionSmall/HomeSmallImg";
-import "../FirstPost/FirstPost.css";
+import './postStyle.css'
 
 const SecondPost = () => {
   return (
-    <div className="section">
-      <div>
+    <div style={{width: '80%', margin: 'auto'}}>
         <HomeSmallImg />
-      </div>
     </div>
   );
 };
