@@ -5,7 +5,7 @@ import './postStyle.css'
 
 const SecondPost = () => {
   return (
-    <div style={{width: '80%', margin: 'auto'}}>
+    <div className="smallSection">
         <HomeSmallImg />
     </div>
   );

@@ -44,7 +44,7 @@
   @media (max-width: 1050px) {
     .mainContainerM2 {
       display: grid;
-      grid-template-columns:  380px 380px;
+      grid-template-columns:  380px 380px 380px;
       gap: 4vw;
       margin: 50px 0px;
     }

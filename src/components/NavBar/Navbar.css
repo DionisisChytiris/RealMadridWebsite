@@ -10,7 +10,9 @@
   justify-content: space-between;
   border-bottom: 1px solid var(--lightgray1);
   z-index: 9999;
-}
+  }
+
+
 .nav1 {
   display: flex;
   align-items: center;
@@ -26,9 +28,15 @@ img {
   height: 45px;
 }
 .menuIcon {
+  /* fill: red; */
   width: 32px;
   height: 32px;
   /* fill: var(--darkblue) */
+}
+.menuIcon:hover{
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px
 }
 
 .nav2 {

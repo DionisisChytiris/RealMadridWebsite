@@ -8,24 +8,22 @@ import Posts from "../../../data/PostNews/Posts";
 import { Link } from "react-router-dom";
 
 const FirstPost = () => {
-  const data1 = Posts.filter((item)=>item.type =='a')
+  const data1 = Posts.filter((item) => item.type == "a");
 
   return (
     <>
-    {data1.map((item,index)=>{
-      return (
-        <div key={index}>
-          <HomeLrgImg
-            link1={item.link}
-            img={item.img}
-            alt={item.alt}
-            title={item.title}
-          />
-        </div>
-      )
-    })}
-    
-
+      {data1.map((item, index) => {
+        return (
+          <div key={index}>
+            <HomeLrgImg
+              link1={item.link}
+              img={item.img}
+              alt={item.alt}
+              title={item.title}
+            />
+          </div>
+        );
+      })}
 
       <div className="smallSection">
         <HomeSmallImg />

@@ -6,7 +6,7 @@ import './postStyle.css'
 
 const ThirdPost = () => {
   return (
-    <div style={{width: '80%',margin: 'auto'}}>
+    <div className='mediumSection'>
         <HomeMediumItem/>
         <HomeMedium2/>
     </div>

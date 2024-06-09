@@ -40,53 +40,54 @@ const NavBar = () => {
     width: "100%",
     height: "63px",
     zIndex: 9999,
-    padding: "0px 30px",
+    padding: "0px 25px",
     alignItems: "center",
     justifyContent: "space-between",
     borderBottom: "1px solid var(--lightgray1)",
+
   };
 
-  return (  
-    <div style={navbarStyle}>
-      <div className="nav1">
-        <div>
-          <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
-        </div>
-        <Link to="/">
-          <img src={assets.real_logo} alt="Logo" />
-        </Link>
-        <div className="line" />
-        <img
-          style={{ width: " 38px", height: "38px " }}
-          src={assets.real_trophy}
-          alt="Trophy"
-        />
-      </div>
-      <div className="nav2">
-        <Link to="/madridistas">Madridistas</Link>
-        <Link to="/tickets">Tickets</Link>
-        <Link to="/hospitality">Hospitality</Link>
-        <Link to="/tour">Tour</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/rmplay">RM Play</Link>
-      </div>
-      <div className="nav3">
-        <div className="icons">
-          <a href="https://www.emirates.com/us/english/" target="_blank">
-            <img src={assets.emirates} alt="" className="emiratesIcon" />
-          </a>
-          <a href="https://www.adidas.co.uk/football" target="_blank">
-            <img src={assets.adidas} alt="" className="adidasIcon" />
-          </a>
-          <div>.</div>
-        </div>
-        <div className="signIn">
+  return (
+      <div style={navbarStyle}>
+        <div className="nav1">
           <div>
-            <FaRegUser color="blue" size={14} />
+            <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
           </div>
-          <div className="signTitle">Sign in</div>
+          <Link to="/">
+            <img src={assets.real_logo} alt="Logo" />
+          </Link>
+          <div className="line" />
+          <img
+            style={{ width: " 38px", height: "38px " }}
+            src={assets.real_trophy}
+            alt="Trophy"
+          />
         </div>
-      </div>
+        <div className="nav2">
+          <Link to="/madridistas">Madridistas</Link>
+          <Link to="/tickets">Tickets</Link>
+          <Link to="/hospitality">Hospitality</Link>
+          <Link to="/tour">Tour</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/rmplay">RM Play</Link>
+        </div>
+        <div className="nav3">
+          <div className="icons">
+            <a href="https://www.emirates.com/us/english/" target="_blank">
+              <img src={assets.emirates} alt="" className="emiratesIcon" />
+            </a>
+            <a href="https://www.adidas.co.uk/football" target="_blank">
+              <img src={assets.adidas} alt="" className="adidasIcon" />
+            </a>
+            <div>.</div>
+          </div>
+          <div className="signIn">
+            <div>
+              <FaRegUser color="blue" size={14} />
+            </div>
+            <div className="signTitle">Sign in</div>
+          </div>
+        </div>
     </div>
   );
 };

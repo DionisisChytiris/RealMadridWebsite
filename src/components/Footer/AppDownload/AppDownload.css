@@ -1,7 +1,7 @@
 .appDownload {
   text-align: center;
   width: 85%;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: auto;
   border-bottom: 1px solid var(--lightgray1);
 }
@@ -22,8 +22,6 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  height: 110px;
-  margin-bottom: 15px;
 }
 .appDownload img {
   width: 200px;
@@ -32,4 +30,20 @@
 img.apple {
   width: 210px;
   height: 155px;
+}
+
+@media (max-width: 850px) {
+  .appDownload .logos {
+    flex-direction: column;
+    margin: 30px;
+    gap: 15px
+  }
+  .appDownload img {
+    width: 200px;
+    height: 70px;
+  }
+  img.apple {
+    width: 210px;
+    height: 75px;
+  }
 }
