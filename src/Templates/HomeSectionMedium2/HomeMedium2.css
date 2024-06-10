@@ -54,7 +54,8 @@
       display: grid;
       grid-template-columns:  250px 250px 250px;
       gap: 4vw;
-      margin: 50px 0px;
+      margin: 40px 0px;
+      /* margin: 50px 0px; */
     }
   }
   
