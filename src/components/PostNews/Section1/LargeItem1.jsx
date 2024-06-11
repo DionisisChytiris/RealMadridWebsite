@@ -1,13 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import HomeLrgImg from "../../Templates/HomeSectionLarge/HomeLargeImg";
-import { assets } from "../../assets/assets";
-import "./postStyle.css";
-import HomeSmallImg from "../../Templates/HomeSectionSmall/HomeSmallImg";
-import Posts from "../../../data/PostNews/Posts";
-import { Link } from "react-router-dom";
+import Posts from "../../../../data/PostNews/Posts";
+import HomeLrgImg from '../../../Templates/HomeSectionLarge/HomeLargeImg'
 
-const LargeItem = () => {
+const LargeItem1 = () => {
   const data1 = Posts.filter((item) => item.type == "a");
 
   return (
@@ -28,4 +24,4 @@ const LargeItem = () => {
   );
 };
 
-export default LargeItem;
+export default LargeItem1;

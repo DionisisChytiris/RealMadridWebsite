@@ -1,23 +1,97 @@
 .smallSection {
-  width: 85%;
+  width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19vw, 1fr));
 }
 
 .mediumSection {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 .medium2Section {
-  width: 85%;
+  width: 80%;
   margin: auto;
-  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+}
+
+.section6-title.sct6 {
+  width: 80%;
+  margin: auto;
+  padding: 0px 0px 40px 0px;
+}
+.section6-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--darkblue1);
+}
+.section6-title-box {
+  width: 80%;
+  margin: auto;
+  padding: 0px 0px 50px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1900px) {
+  .smallSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    width: 85%;
+    margin: auto;
+  }
+
+  .mediumSection {
+    width: 85%;
+    margin: auto;
+  }
+  .medium2Section {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  }
+  .section6-title.sct6 {
+    width: 85%;
+    margin: auto;
+    padding: 0px 0px 40px 0px;
+  }
+  .section6-title-box {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .smallSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
+    width: 85%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1050px) {
   .smallSection {
-    width: 100%;
     padding-left: 7%;
-    overflow-x: hidden;
+    /* width: 85%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    width: 100%;
   }
   .mediumSection {
     width: 100%;
@@ -25,9 +99,11 @@
     overflow-x: hidden;
   }
   .medium2Section {
-    width: 100%;
     padding-left: 7%;
-    overflow-x: hidden;
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    width: 100%;
   }
 }
 
@@ -36,12 +112,28 @@
     height: 9vh;
   }
   .smallSection {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    width: 100%;
     padding-left: 3%;
+    overflow-x: hidden;
+
   }
   .mediumSection {
     padding-left: 3%;
   }
   .medium2Section {
     padding-left: 3%;
+  }
+}
+
+@media (max-width: 660px) {
+  .smallSection {
+    padding-left: 3%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    width: 100%;
+    padding-left: 3%;
+    overflow-x: hidden;
   }
 }

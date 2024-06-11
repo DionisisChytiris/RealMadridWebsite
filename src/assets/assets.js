@@ -11,6 +11,9 @@ import img4 from './img4.png'
 import img5 from './img5.png'
 import img6 from './img6.png'
 import img7 from './img7.png'
+import historia from './historia_real.webp'
+import reserva from './reserva_tu_asiento.webp'
+import vestuarios from './VESTUARIOS_PRIMER_EQUIPO_BERNABEU_PCA9650.webp'
 
 
 export const assets = {
@@ -27,4 +30,7 @@ export const assets = {
     img5,
     img6,
     img7,
+    historia,
+    reserva,
+    vestuarios
 }
