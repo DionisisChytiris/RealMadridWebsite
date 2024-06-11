@@ -47,6 +47,10 @@
 .title:hover {
   color: rgb(57, 41, 131);
 }
+.container:hover .title {
+  transition: color 1s ease-in-out;
+  color: blue;
+}
 
 @media (max-width: 1900px) {
   .container {

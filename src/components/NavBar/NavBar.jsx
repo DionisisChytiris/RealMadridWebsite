@@ -1,13 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { NavData } from "../../../data/NavBar/NavData";
 import { assets } from "../../assets/assets";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IconContext } from "react-icons";
 import { DiBackbone } from "react-icons/di";
 import { FaRegUser } from "react-icons/fa6";
-import NavBarSide from "./NavBarSide";
+import Modal from "./Modal";
+import Sidebar from "./Sidebar";
 
 const NavBar = () => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -45,57 +47,79 @@ const NavBar = () => {
     alignItems: "center",
     justifyContent: "space-between",
     borderBottom: "1px solid var(--lightgray1)",
-
   };
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
   return (
-      <div style={navbarStyle}>
-        <div className="nav1">
-          <div onClick={toggleMenu}>
-            <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
-          </div>
-          <Link to="/">
-            <img src={assets.real_logo} alt="Logo" />
-          </Link>
-          <div className="line" />
-          <img
-            style={{ width: " 38px", height: "38px " }}
-            src={assets.real_trophy}
-            alt="Trophy"
-          />
+    <div style={navbarStyle}>
+      <div className="nav1">
+        <div onClick={handleOpenModal}>
+          <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
         </div>
-        <NavBarSide isOpen={isMenuOpen} toggleMenu={toggleMenu}/>
-        <div className="nav2">
-          <Link to="/madridistas">Madridistas</Link>
-          <Link to="/tickets">Tickets</Link>
-          <Link to="/hospitality">Hospitality</Link>
-          <Link to="/tour">Tour</Link>
-          <Link to="/shop">Shop</Link>
-          <Link to="/rmplay">RM Play</Link>
-        </div>
-        <div className="nav3">
-          <div className="icons">
-            <a href="https://www.emirates.com/us/english/" target="_blank">
-              <img src={assets.emirates} alt="" className="emiratesIcon" />
-            </a>
-            <a href="https://www.adidas.co.uk/football" target="_blank">
-              <img src={assets.adidas} alt="" className="adidasIcon" />
-            </a>
-            <div>.</div>
-          </div>
-          <div className="signIn">
-            <div>
-              <FaRegUser color="blue" size={14} />
+        <Link to="/">
+          <img src={assets.real_logo} alt="Logo" />
+        </Link>
+        <div className="line" />
+        <img
+          style={{ width: " 38px", height: "38px " }}
+          src={assets.real_trophy}
+          alt="Trophy"
+        />
+      </div>
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <Modal show={showModal} onClose={handleCloseModal} />
+      {/* <h1>Modal Content</h1> */}
+      {/* <p>This is the content of the modal</p>
+      </Modal> */}
+      <div className="nav2">
+        {NavData.map((item, index)=>{
+          return(
+            <div key={index}>
+              <NavLink
+                to={item.link}
+                style={({ isActive }) => ({
+                  color: isActive ? "blue" : "#21416E",
+                })}
+              >
+                {item.title}
+              </NavLink>
+              
             </div>
-            <div className="signTitle">Sign in</div>
-          </div>
+          )
+        })}
+      </div>
+      <div className="nav3">
+        <div className="icons">
+          <a href="https://www.emirates.com/us/english/" target="_blank">
+            <img src={assets.emirates} alt="" className="emiratesIcon" />
+          </a>
+          <a href="https://www.adidas.co.uk/football" target="_blank">
+            <img src={assets.adidas} alt="" className="adidasIcon" />
+          </a>
+          <div>.</div>
         </div>
+        <div className="signIn">
+          <div>
+            <FaRegUser color="blue" size={14} />
+          </div>
+          <div className="signTitle">Sign in</div>
+        </div>
+      </div>
     </div>
   );
 };

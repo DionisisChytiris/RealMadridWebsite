@@ -33,6 +33,11 @@
   padding: 10px 0px;
   font-weight: 700;
 }
+
+.containerSmlImg:hover .title{
+  transition: color 1s ease-in-out;
+  color: blue;
+}
 .slide {
   display: none;
   background-color: red;

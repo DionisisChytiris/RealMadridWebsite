@@ -40,6 +40,11 @@
   font-weight: 500;
 }
 
+.containerMediumItem:hover .titleM{
+  transition: color 1s ease-in-out;
+  color: blue;
+}
+
 @media (max-width: 1050px) {
   .mainContainerM {
     display: grid;

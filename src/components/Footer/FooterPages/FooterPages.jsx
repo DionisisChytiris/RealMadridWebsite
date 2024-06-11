@@ -1,12 +1,28 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./FooterPages.css";
+import { DataFt } from "../../../../data/Footer/DataFt";
 
 const FooterPages = () => {
   return (
     <div className="footerPages">
       <div className="foot-container">
         <div className="foot1 test1">
+          {/* {DataFt.map((item, index)=>{
+            return(
+              <div key={index}>
+                <NavLink
+                  to={item.link}
+                  style={({ isActive }) => ({
+                    color: isActive ? "blue" : "#21416E",
+                  })}
+                >
+                  {item.title}
+                </NavLink>
+              </div>
+            )
+          })} */}
           <a href="/tickets" className="bold">
             Football
           </a>
@@ -18,7 +34,14 @@ const FooterPages = () => {
           <a href="/tickets" className="bold">
             Basketball
           </a>
-          <a href="/tickets">Basketball First Team</a>
+          <NavLink
+            to="/tickets"
+            style={({ isActive }) => ({
+              color: isActive ? "blue" : "#21416E",
+            })}
+          >
+            Basketball First Team
+          </NavLink>
         </div>
         <div className="foot1 test1">
           <a href="/tickets" className="bold">

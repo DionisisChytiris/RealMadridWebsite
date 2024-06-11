@@ -14,7 +14,7 @@ const HomeMediumItem = () => {
             <img src={assets.img2} alt="" />
           </div>
           <div className="titleBoxM">
-            <div className="titleM">{assets.title}</div>
+            <div className="titleM">hello</div>
           </div>
         </div>
       </Link>
