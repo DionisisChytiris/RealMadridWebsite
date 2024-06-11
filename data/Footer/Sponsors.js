@@ -1,4 +1,5 @@
 import { assets } from "../../src/assets/footerImages/assets";
+// import { FaFacebook } from "react-icons/fa";
 
 export const DataSponsors = [
   {
@@ -155,3 +156,16 @@ export const DataSponsors = [
     alt: "bantrab",
   },
 ];
+
+export const social =[
+  {
+    link: '/',
+    img: assets.bantrab
+    // img:  <FaFacebook/>
+  },
+  {
+    link: '/',
+    img: assets.bantrab
+    // img:  <FaFacebook style={{ color: "#0f2145", fontSize: "25px" }} />
+  },
+]

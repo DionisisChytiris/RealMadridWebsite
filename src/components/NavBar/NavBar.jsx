@@ -7,6 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IconContext } from "react-icons";
 import { DiBackbone } from "react-icons/di";
 import { FaRegUser } from "react-icons/fa6";
+import NavBarSide from "./NavBarSide";
 
 const NavBar = () => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -47,10 +48,16 @@ const NavBar = () => {
 
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
       <div style={navbarStyle}>
         <div className="nav1">
-          <div>
+          <div onClick={toggleMenu}>
             <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
           </div>
           <Link to="/">
@@ -63,6 +70,7 @@ const NavBar = () => {
             alt="Trophy"
           />
         </div>
+        <NavBarSide isOpen={isMenuOpen} toggleMenu={toggleMenu}/>
         <div className="nav2">
           <Link to="/madridistas">Madridistas</Link>
           <Link to="/tickets">Tickets</Link>

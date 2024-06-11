@@ -1,0 +1,31 @@
+.copyright {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright:hover{
+    background-color: #3e59a9;
+    transition: background-color 5s ease-in-out;
+}
+.copyright .text{
+    font-size: 10px;
+}
+.policies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.policies a {
+    font-weight: 500;
+    color: var(--darkblue1);
+    font-size: 12px;
+    text-decoration: underline;
+    }
+    .policies p {
+    font-weight: 500;
+    color: var(--darkblue1);
+    font-size: 12px;
+}

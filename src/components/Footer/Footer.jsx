@@ -3,6 +3,7 @@ import React from "react";
 import Sponsors from "./Sponsors/Sponsors";
 import FooterPages from "./FooterPages/FooterPages";
 import AppDownload from "./AppDownload/AppDownload";
+import Copyright from "./CopyrightSection/Copyright";
 
 const Footer = () => {
   return (
@@ -10,11 +11,7 @@ const Footer = () => {
       <FooterPages />
       <AppDownload />
       <Sponsors />
-
-      <div>hey</div>
-      <div>hey</div>
-      <div>hey</div>
-      <div>hey</div>
+      <Copyright/>
     </>
   );
 };

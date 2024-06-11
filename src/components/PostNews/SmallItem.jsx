@@ -3,7 +3,7 @@ import React from "react";
 import HomeSmallImg from "../../Templates/HomeSectionSmall/HomeSmallImg";
 import './postStyle.css'
 
-const SecondPost = () => {
+const SmallItem = () => {
   return (
     <div className="smallSection">
         <HomeSmallImg />
@@ -11,4 +11,4 @@ const SecondPost = () => {
   );
 };
 
-export default SecondPost;
+export default SmallItem;

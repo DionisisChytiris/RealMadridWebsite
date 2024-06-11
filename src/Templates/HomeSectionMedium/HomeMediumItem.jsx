@@ -22,7 +22,7 @@ const HomeMediumItem = () => {
   return (
     <div className="mainContainerM">
       <Link to="/tickets">
-        <MediumItem img={assets.img2} title="Test 1" />
+        <MediumItem img={assets.img2} title="Test asfdhkjkh ljjh1" />
       </Link>
       <div>
         <MediumItem img={assets.img3} title="Test 2 afdhj adsf adsf asdf adf asdf asdf sdf asdf  asdfasdfa ASDFSDFAS" />

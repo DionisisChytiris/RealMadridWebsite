@@ -7,7 +7,7 @@ import HomeSmallImg from "../../Templates/HomeSectionSmall/HomeSmallImg";
 import Posts from "../../../data/PostNews/Posts";
 import { Link } from "react-router-dom";
 
-const FirstPost = () => {
+const LargeItem = () => {
   const data1 = Posts.filter((item) => item.type == "a");
 
   return (
@@ -24,12 +24,8 @@ const FirstPost = () => {
           </div>
         );
       })}
-
-      <div className="smallSection">
-        <HomeSmallImg />
-      </div>
     </>
   );
 };
 
-export default FirstPost;
+export default LargeItem;

@@ -1,14 +1,12 @@
 .sponsors {
   text-align: center;
-  padding: 50px;
+  padding-top: 50px;
   border-bottom: 1px solid var(--lightgray1);
 }
 .sponsors1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: block; */
-  /* gap: 40px; */
 }
 .sponsors1 img {
   width: 150px;
@@ -18,13 +16,65 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 900px;
   flex-wrap: wrap;
   /* background-color: aqua; */
   margin: 20px auto;
-  gap: 30px;
+  gap: 20px;
 }
 .sponsors2 img {
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height: 100px;
 }
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0px 0px 15px 25px;
+}
+.social img {
+  width: 50px;
+  height: 50px;
+}
+.socialBox a{
+  padding-right: 40px;
+}
+
+@media (max-width: 1250px) {
+  .sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    margin: 20px auto 0px;
+    gap: 20px;
+  }
+  .sponsors2 img {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (max-width: 790px) {
+  .sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    margin: 20px auto;
+    gap: 20px;
+  }
+  .sponsors1 img {
+    width: 120px;
+    height: 80px;
+  }
+  .sponsors2 img {
+    width: 55px;
+    height: 55px;
+  }
+}
+

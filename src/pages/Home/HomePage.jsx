@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import {FirstPost, SecondPost, ThirdPost} from '../../components/PostNews/index'
+import {LargeItem, SmallItem, Medium1Item,Medium2Item} from '../../components/PostNews/index'
 import './HomePage.css'
-
 
 const DivideLine = () => {
   return <div className="bisector" />;
@@ -11,14 +10,16 @@ const DivideLine = () => {
 const HomePage = () => {
   return (
     <div className="homeContainer">
-      <FirstPost />
-      <SecondPost/>
+      <LargeItem />
+      <SmallItem/>
+      <SmallItem/>
       <DivideLine />
-      <ThirdPost/>
+      <Medium1Item/>
+      <Medium2Item/>
       <DivideLine />
-      {/* <ThirdPost/> */}
+      {/* <Medium1Item/> */}
       <div style={{marginTop: '50px'}}>
-        <SecondPost/>
+        <SmallItem/>
       </div>
       <DivideLine />
     </div>

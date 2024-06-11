@@ -1,17 +1,33 @@
 .smallSection {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .mediumSection {
-  width: 80%;
+  width: 85%;
   margin: auto;
+}
+.medium2Section {
+  width: 85%;
+  margin: auto;
+  margin-top: -30px;
 }
 
 @media (max-width: 1050px) {
   .smallSection {
     width: 100%;
-    margin-left: 10%;
+    padding-left: 7%;
+    overflow-x: hidden;
+  }
+  .mediumSection {
+    width: 100%;
+    padding-left: 7%;
+    overflow-x: hidden;
+  }
+  .medium2Section {
+    width: 100%;
+    padding-left: 7%;
+    overflow-x: hidden;
   }
 }
 
@@ -20,9 +36,12 @@
     height: 9vh;
   }
   .smallSection {
-    margin-left: 3%;
+    padding-left: 3%;
   }
   .mediumSection {
-    margin-left: 3%;
+    padding-left: 3%;
+  }
+  .medium2Section {
+    padding-left: 3%;
   }
 }

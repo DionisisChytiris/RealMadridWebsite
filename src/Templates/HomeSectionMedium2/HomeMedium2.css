@@ -47,6 +47,8 @@
       grid-template-columns:  380px 380px 380px;
       gap: 4vw;
       margin: 50px 0px;
+      /* width: 100%; */
+      /* overflow: hidden; */
     }
   }
   @media (max-width: 850px) {
@@ -54,7 +56,8 @@
       display: grid;
       grid-template-columns:  250px 250px 250px;
       gap: 4vw;
-      margin: 40px 0px;
+      margin: 50px 0px;
+      /* width: 100%; */
       /* margin: 50px 0px; */
     }
   }
