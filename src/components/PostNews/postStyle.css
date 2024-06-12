@@ -1,8 +1,9 @@
 .smallSection {
   width: 80%;
   margin: auto;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(19vw, 1fr));
@@ -124,6 +125,7 @@
   }
   .medium2Section {
     padding-left: 3%;
+
   }
 }
 

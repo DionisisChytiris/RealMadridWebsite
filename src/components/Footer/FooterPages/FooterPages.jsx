@@ -1,8 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import styled from 'styled-components'
 import "./FooterPages.css";
 import { DataFt } from "../../../../data/Footer/DataFt";
+
+const StyledNavLink = styled(NavLink)`
+  color: blue;
+   &.active{
+    color: #21416E;
+   }
+`
 
 const FooterPages = () => {
   return (
@@ -26,9 +34,9 @@ const FooterPages = () => {
           <a href="/tickets" className="bold">
             Football
           </a>
-          <a href="/tickets">First Team</a>
-          <a href="/tickets">Academy</a>
-          <a href="/tickets">Women s Team</a>
+          <StyledNavLink to="/tickets" activeClassName='active'>First Team</StyledNavLink>
+          <StyledNavLink to="/tickets" activeClassName='active'>Academy</StyledNavLink>
+          <StyledNavLink to="/tour" activeClassName='active'>Women s Team</StyledNavLink>
         </div>
         <div className="foot1 test1">
           <a href="/tickets" className="bold">

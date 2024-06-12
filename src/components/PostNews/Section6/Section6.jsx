@@ -7,7 +7,7 @@ import "../postStyle.css";
 
 const Section6 = () => {
   const data1 = Posts.filter((item) => item.type == "sct6a");
-  const data2 = Posts.filter((item) => item.type == "b");
+  const data2 = Posts.filter((item) => item.type == "sct6b");
   return (
     <div>
       <div>

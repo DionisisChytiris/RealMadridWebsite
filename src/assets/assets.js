@@ -14,7 +14,12 @@ import img7 from './img7.png'
 import historia from './historia_real.webp'
 import reserva from './reserva_tu_asiento.webp'
 import vestuarios from './VESTUARIOS_PRIMER_EQUIPO_BERNABEU_PCA9650.webp'
-
+import noCelebracion from './ND_CELEBRACION_CIBELES.webp'
+import LaDecimocuarta from './_330781615089.webp'
+import premiumCard from './premiumcard.webp'
+import goTour from './sorteo_abbott_en.webp'
+import WinJersey from './NotMadridista_campeones_en.webp'
+import Champions from './sorteo_en.webp'
 
 export const assets = {
     real_logo,
@@ -32,5 +37,11 @@ export const assets = {
     img7,
     historia,
     reserva,
-    vestuarios
+    vestuarios,
+    noCelebracion,
+    LaDecimocuarta,
+    premiumCard,
+    goTour,
+    WinJersey,
+    Champions
 }

@@ -3,13 +3,12 @@ import React from "react";
 import {
   LargeItem1,
   SmallItem,
-  Medium1Item,
-  Medium2Item,
   SmallItem1,
   SmallItem2,
   Section6,
   Section2,
   Section3,
+  Section5,
 } from "../../components/PostNews/index";
 import "./HomePage.css";
 
@@ -23,10 +22,10 @@ const HomePage = () => {
       {/* Section 1 */}
       <LargeItem1 />
       <SmallItem1 />
-      <div style={{ marginTop: "-50px" }}>
+      <div style={{ marginTop: "-3%" }}>
         <SmallItem2 />
       </div>
-      <div style={{ marginTop: "-50px" }}>
+      <div style={{ marginTop: "-3%" }}>
         <DivideLine />
       </div>
       {/* Section 2 */}
@@ -42,21 +41,22 @@ const HomePage = () => {
       <div style={{ marginTop: "50px" }}>
         <SmallItem />
       </div>
-      <div style={{ marginTop: "-50px" }}>
+      <div style={{ marginTop: "-3%" }}>
         <DivideLine />
       </div>
       {/* Section 5 */}
       <div style={{ marginTop: "50px" }}>
-        <SmallItem />
+        {/* <SmallItem /> */}
+        <Section5/>
       </div>
-      <div style={{ marginTop: "-50px" }}>
+      {/* <div style={{ marginTop: "0%" }}>
         <DivideLine />
-      </div>
+      </div> */}
       {/* Section 6 */}
       <div style={{ marginTop: "50px" }}>
         <Section6 />
       </div>
-      <DivideLine />
+      {/* <DivideLine /> */}
     </div>
   );
 };
