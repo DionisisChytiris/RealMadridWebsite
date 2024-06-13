@@ -117,7 +117,9 @@ const NavBar = () => {
           <div>
             <FaRegUser color="blue" size={14} />
           </div>
-          <div className="signTitle">Sign in</div>
+          <div className="signTitle">
+            <Link to='/signin'>Sign in</Link>
+          </div>
         </div>
       </div>
     </div>

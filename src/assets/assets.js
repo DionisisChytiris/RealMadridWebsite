@@ -20,6 +20,19 @@ import premiumCard from './premiumcard.webp'
 import goTour from './sorteo_abbott_en.webp'
 import WinJersey from './NotMadridista_campeones_en.webp'
 import Champions from './sorteo_en.webp'
+import DiscoverRM from './FEED_GRUPO.webp'
+import MensCollection from './FEED_HOMBRE.webp'
+import WomenCollection from './FEED_MUJER.webp'
+import YouthCollection from './FEED_NI_O.webp'
+import TrainingCollection from './FEED_TRAINING.webp'
+import TrophiesCollection from './ND_SALA_JUNTAS_HE02463Thumb.webp'
+import ForbesClub from './ND_PLANO_GENERAL_ESTADIO_HE19925_copia.webp'
+import YearsOfLegend from './ND_sala_juntas_25_copas_europa.jpeg'
+import SoccerChampionsTour from './ND_MetLife_Stadium_GettyImages_1164443317.webp'
+import videoBernabeu from './videoBernabeu.mp4'
+import RealLogoPhoto from './FOTO_ESCUDO_COMUNICADO_OFICIAL.webp'
+import EuropeanCups from './ND_15_COPAS_TOUR___AV19296.webp'
+import LaDecimoquinta from './ND_CHAMPIONS_FINAL_BORUSSIA_RM_LEVANTAMIENTO_COPA_GRUPOGettyImages_2155639288.jpeg'
 
 export const assets = {
     real_logo,
@@ -43,5 +56,18 @@ export const assets = {
     premiumCard,
     goTour,
     WinJersey,
-    Champions
+    Champions,
+    DiscoverRM,
+    MensCollection,
+    WomenCollection,
+    YouthCollection,
+    TrainingCollection, 
+    TrophiesCollection,
+    YearsOfLegend,
+    ForbesClub,
+    SoccerChampionsTour,
+    videoBernabeu,
+    RealLogoPhoto,
+    EuropeanCups,
+    LaDecimoquinta
 }

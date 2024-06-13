@@ -41,7 +41,7 @@ const Section1 = () => {
           );
         })}
       </div>
-      <div className="smallSection">
+      <div className="smallSection sct1b">
         {data2.map((item, index) => {
           return (
             <div key={index}>

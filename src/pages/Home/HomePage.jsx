@@ -21,7 +21,7 @@ export const DivideLine = () => {
 const HomePage = () => {
   return (
     <div className="homeContainer">
-      <Section1/>
+      <Section1 />
       {/* Section 1 */}
       {/* <LargeItem1 />
       <SmallItem1 />
@@ -40,11 +40,10 @@ const HomePage = () => {
       <Section3 />
       <DivideLine />
       {/* Section 4*/}
-      <div style={{ marginTop: "50px" }}>
-        <SmallItem />
-      </div>
       <Section4 />
-      <DivideLine />
+      <div style={{ marginTop: "-6%" }}>
+        <DivideLine />
+      </div>
       {/* Section 5 */}
       <Section5 />
       {/* Section 6 */}
