@@ -5,18 +5,21 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/Home/HomePage";
-import { Madridistas, Tickets, Hospitality, Tour, Shop, RMPlay, SignIn } from "./pages/NavPages";
+import { Madridistas, Tickets, Hospitality, Tour, Shop, RMPlay} from "./pages/NavPages";
 import { Post1, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post2, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post3, Post30, Post31, Post32, Post33, Post34, Post35, Post36, Post4, Post5, Post6, Post7, Post8, Post9 } from "./pages/PostNewsPages";
+import SignIn from "./components/SignIn/SignIn";
 
 
 function App() {
+  const [showLogin,setShowLogin] = React.useState(false);
+
   return (
     <>
+    {showLogin?<SignIn setShowLogin={setShowLogin}/>:<></>}
       <div className="app">
-      <NavBar />
+      <NavBar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path='/signin' element={<SignIn/>}/>
           <Route path="/madridistas" element={<Madridistas/>} />
           <Route path="/tickets" element={<Tickets/>} />
           <Route path="/hospitality" element={<Hospitality/>} />

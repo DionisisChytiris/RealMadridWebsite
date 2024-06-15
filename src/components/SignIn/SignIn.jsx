@@ -1,11 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import './SignIn.css'
 
 const SignIn = () => {
   return (
-    <div style={{height: '100vh', zIndex: 999999}}>
-      Hello
-    </div>
+    <div className='sign-in'>SignIn</div>
   )
 }
 

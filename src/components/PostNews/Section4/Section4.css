@@ -1,5 +1,6 @@
 .sct4-title {
   width: 85%;
+  /* height: 780px; */
   margin: auto;
   font-size: 40px;
   font-weight: 700;
@@ -11,13 +12,18 @@
   color: rgb(61, 61, 232);
 }
 .middle-section {
+  position: relative;
   width: 85%;
-  height: 780px;
+  height: 550px;
   margin: 50px auto 40px;
 }
 .middle-section img {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
   width: 70%;
+  height: 100%;
   /* width: 1100px; */
-  height: 780px;
+  /* height: 780px; */
   border-radius: 25px;
 }

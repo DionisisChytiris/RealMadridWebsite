@@ -79,7 +79,7 @@ const Sponsors = () => {
             <FaSnapchatGhost style={{ color: "#0f2145", fontSize: "27px" }} />
           </a>
           <a href="https://www.tiktok.com/@realmadrid?lang=en" target="_blank">
-            <FaTiktok style={{ color: "#0f2145", fontSize: "27px" }} />
+            <FaTiktok style={{ color: "#0f2145", fontSize: "24px" }} />
           </a>
         </div>
       </div>

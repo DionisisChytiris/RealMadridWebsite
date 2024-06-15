@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -11,7 +12,7 @@ import { FaRegUser } from "react-icons/fa6";
 import Modal from "./Modal";
 import Sidebar from "./Sidebar";
 
-const NavBar = () => {
+const NavBar = ({ setShowLogin }) => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
   const [top, setTop] = useState(0);
 
@@ -113,14 +114,14 @@ const NavBar = () => {
           </a>
           <div>.</div>
         </div>
-        <div className="signIn">
+        <button onClick={() => setShowLogin(true)} className="signIn">
           <div>
             <FaRegUser color="blue" size={14} />
           </div>
           <div className="signTitle">
             <Link to='/signin'>Sign in</Link>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   );
