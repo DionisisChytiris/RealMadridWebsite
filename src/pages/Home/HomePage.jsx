@@ -22,12 +22,6 @@ const HomePage = () => {
   return (
     <div className="homeContainer">
       <Section1 />
-      {/* Section 1 */}
-      {/* <LargeItem1 />
-      <SmallItem1 />
-      <div style={{ marginTop: "-3%" }}>
-        <SmallItem2 />
-      </div> */}
       <div style={{ marginTop: "-3%" }}>
         <DivideLine />
       </div>

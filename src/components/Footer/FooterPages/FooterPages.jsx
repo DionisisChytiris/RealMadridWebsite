@@ -1,111 +1,97 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import styled from 'styled-components'
+import { NavLink } from "react-router-dom";
 import "./FooterPages.css";
 import { DataFt } from "../../../../data/Footer/DataFt";
 
-const StyledNavLink = styled(NavLink)`
-  color: blue;
-   &.active{
-    color: #21416E;
-   }
-`
-
 const FooterPages = () => {
+  const data1 = DataFt.filter((item) => item.type == "Ftb1");
+  const data2 = DataFt.filter((item) => item.type == "Ftb2");
+  const data3 = DataFt.filter((item) => item.type == "Ftb3");
+  const data4 = DataFt.filter((item) => item.type == "Ftb4");
+  const data5 = DataFt.filter((item) => item.type == "Ftb5");
   return (
     <div className="footerPages">
       <div className="foot-container">
-        <div className="foot1 test1">
-          {/* {DataFt.map((item, index)=>{
-            return(
-              <div key={index}>
-                <NavLink
-                  to={item.link}
-                  style={({ isActive }) => ({
-                    color: isActive ? "blue" : "#21416E",
-                  })}
-                >
-                  {item.title}
-                </NavLink>
-              </div>
-            )
-          })} */}
-          <a href="/tickets" className="bold">
-            Football
-          </a>
-          <StyledNavLink to="/tickets" activeClassName='active'>First Team</StyledNavLink>
-          <StyledNavLink to="/tickets" activeClassName='active'>Academy</StyledNavLink>
-          <StyledNavLink to="/tour" activeClassName='active'>Women s Team</StyledNavLink>
-        </div>
-        <div className="foot1 test1">
-          <a href="/tickets" className="bold">
-            Basketball
-          </a>
-          <NavLink
-            to="/tickets"
-            style={({ isActive }) => ({
-              color: isActive ? "blue" : "#21416E",
+        <div className="ft-bx-ts1">
+          <div className="foot1 section1">
+            {data1.map((item, index) => {
+              return (
+                <div key={index}>
+                  <NavLink to={item.link}>
+                    <div className="ft-tl-1 lrg-bx">{item.title1}</div>
+                    {/* show only under width=950px */}
+                    <div className="ft-tl-1-sm-bx">
+                      <div className="ft-tl-1">{item.title1}</div>
+                      <div className="ft-tl-arrow">{item.arrow}</div>
+                    </div>
+                    {/*  */}
+                    <div className="ft-tl-2">{item.title}</div>
+                  </NavLink>
+                </div>
+              );
             })}
-          >
-            Basketball First Team
-          </NavLink>
+          </div>
+          <div className="foot1 section1">
+            {data2.map((item, index) => {
+              return (
+                <div key={index}>
+                  <NavLink to={item.link}>
+                    <div className="ft-tl-1 lrg-bx">{item.title1}</div>
+                      {/* show only under width=950px */}
+                      <div className="ft-tl-1-sm-bx">
+                      <div className="ft-tl-1">{item.title1}</div>
+                      <div className="ft-tl-arrow">{item.arrow}</div>
+                    </div>
+                    {/*  */}
+                    <div className="ft-tl-2">{item.title}</div>
+                  </NavLink>
+                </div>
+              );
+            })}
+          </div>
+          <div className="foot1 section1">
+            {data3.map((item, index) => {
+              return (
+                <div key={index}>
+                  <NavLink to={item.link}>
+                    <div className="ft-tl-1 lrg-bx">{item.title1}</div>
+                      {/* show only under width=950px */}
+                      <div className="ft-tl-1-sm-bx">
+                      <div className="ft-tl-1">{item.title1}</div>
+                      <div className="ft-tl-arrow">{item.arrow}</div>
+                    </div>
+                    {/*  */}
+                    <div className="ft-tl-2">{item.title}</div>
+                  </NavLink>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <div className="foot1 test1">
-          <a href="/tickets" className="bold">
-            The Club
-          </a>
-          <a href="/tickets">Schedule</a>
-          <a href="/tickets">Transparency</a>
-          <a href="/tickets">Sponsors</a>
-          <a href="/tickets">Values</a>
-          <a href="/tickets">Honors</a>
-          <a href="/tickets">History</a>
-          <a href="/tickets">Fan clubs</a>
-          <a href="/tickets">Bernabéu Stadium</a>
-          <a href="/tickets">Real Madrid Club</a>
-          <a href="/tickets">WiZink Center</a>
-          <a href="/tickets">Contact</a>
-        </div>
-        <div className="foot1 test2">
-          <a href="/tickets" className="bold">
-            Bernabéu Stadium
-          </a>
-          <a href="/tickets" className="bold">
-            RMTV live
-          </a>
-          <a href="/tickets" className="bold">
-            News
-          </a>
-          <a href="/tickets" className="bold">
-            Foundation Real Madrid
-          </a>
-          <a href="/tickets" className="bold">
-            RM Next
-          </a>
-          <a href="/tickets" className="bold">
-            RM Graduate School
-          </a>
-        </div>
-        <div className="foot1 test3">
-          <a href="/tickets" className="bold">
-            Madridistas
-          </a>
-          <a href="/tickets" className="bold">
-            Hospitality
-          </a>
-          <a href="/tickets" className="bold">
-            Shop
-          </a>
-          <a href="/tickets" className="bold">
-            Tour
-          </a>
-          <a href="/tickets" className="bold">
-            Tickets
-          </a>
-          <a href="/tickets" className="bold">
-            RM Play
-          </a>
+        <div className="ft-bx-ts2">
+          <div className="foot1 section2">
+            {data4.map((item, index) => {
+              return (
+                <div key={index}>
+                  <NavLink to={item.link}>
+                    <div className="ft-tl-3">{item.title1}</div>
+                  </NavLink>
+                </div>
+              );
+            })}
+          </div>
+          <div className="foot1 section3">
+            {data5.map((item, index) => {
+              return (
+                <div key={index}>
+                  <NavLink to={item.link}>
+                    <div className="ft-tl-3">{item.title1}</div>
+                  </NavLink>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 

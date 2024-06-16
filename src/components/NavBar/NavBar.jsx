@@ -5,12 +5,8 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { NavData } from "../../../data/NavBar/NavData";
 import { assets } from "../../assets/assets";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IconContext } from "react-icons";
-import { DiBackbone } from "react-icons/di";
 import { FaRegUser } from "react-icons/fa6";
 import Modal from "./Modal";
-import Sidebar from "./Sidebar";
 
 const NavBar = ({ setShowLogin }) => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -36,7 +32,7 @@ const NavBar = ({ setShowLogin }) => {
   }, [prevScrollpos]);
 
   const navbarStyle = {
-    position: "fixed",
+    position: 'fixed',
     top: `${top}px`,
     transition: "top 0.8s",
     display: "flex",
@@ -51,19 +47,30 @@ const NavBar = ({ setShowLogin }) => {
   };
 
   const [showModal, setShowModal] = useState(false);
+ const [scrollDisabled, setScrollDisabled] = useState(false);
+
+
+  useEffect(() => {
+    if (scrollDisabled) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [scrollDisabled]);
 
   const handleOpenModal = () => {
-    setShowModal(true);
+    setShowModal(!showModal);
+    setScrollDisabled(!scrollDisabled);
+
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-  };
+    setScrollDisabled(false);
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
   };
 
   return (
@@ -82,14 +89,10 @@ const NavBar = ({ setShowLogin }) => {
           alt="Trophy"
         />
       </div>
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-      <Modal show={showModal} onClose={handleCloseModal} />
-      {/* <h1>Modal Content</h1> */}
-      {/* <p>This is the content of the modal</p>
-      </Modal> */}
+      <Modal show={showModal}  onClose={handleCloseModal} />
       <div className="nav2">
-        {NavData.map((item, index)=>{
-          return(
+        {NavData.map((item, index) => {
+          return (
             <div key={index}>
               <NavLink
                 to={item.link}
@@ -99,9 +102,8 @@ const NavBar = ({ setShowLogin }) => {
               >
                 {item.title}
               </NavLink>
-              
             </div>
-          )
+          );
         })}
       </div>
       <div className="nav3">
@@ -114,12 +116,18 @@ const NavBar = ({ setShowLogin }) => {
           </a>
           <div>.</div>
         </div>
-        <button onClick={() => setShowLogin(true)} className="signIn">
+        <button
+          onClick={() => (
+            setShowLogin(true), 
+            setScrollDisabled(true))}
+          className="signIn"
+        >
           <div>
             <FaRegUser color="blue" size={14} />
           </div>
           <div className="signTitle">
-            <Link to='/signin'>Sign in</Link>
+            {/* <Link to='/signin'>Sign in</Link> */}
+            <div>Sign in</div>
           </div>
         </button>
       </div>

@@ -97,6 +97,7 @@
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
     width: 100%;
+    overflow-x: hidden;
   }
   .mediumSection {
     width: 100%;
@@ -109,6 +110,7 @@
     display: grid;
     grid-template-columns: 400px 400px 400px;
     width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -129,6 +131,7 @@
   }
   .medium2Section {
     padding-left: 3%;
+    grid-template-columns: 250px 250px 250px 250px;
 
   }
 }
@@ -142,4 +145,8 @@
     padding-left: 3%;
     overflow-x: hidden;
   }
+  /* .medium2Section{
+    grid-template-columns: 250px 250px 250px 250px;
+
+  } */
 }

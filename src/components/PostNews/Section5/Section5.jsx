@@ -5,6 +5,7 @@ import "../postStyle.css";
 import Posts from "../../../../data/PostNews/Posts";
 import HomeMedium2 from "../../../Templates/HomeSectionMedium2/HomeMedium2";
 import HomeLrgImg from "../../../Templates/HomeSectionLarge/HomeLargeImg";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Section5 = () => {
   const data = Posts.filter((item) => item.type == "sct5a");
@@ -38,10 +39,25 @@ const Section5 = () => {
           );
         })}
       </div>
-      <div style={imgBox} className="imgBox">
-      {/* <div className="imgBox"> */}
-        {/* <div className="textBernabeu">View the Stadium redevelopment work</div> */}
-        <img  className='bernabeu' src="../../../../src/assets/Bernabeu.png"/>
+      <div style={imgBoxSct5} className="imgBox-sct5">
+        <div className="text-container-sct5">
+          <div className="textBernabeu">
+            View the Stadium redevelopment work
+          </div>
+          <div className='text-bernb-cnt'>
+            <div className="text-bernb-frs">Bernabéu Stadium</div>
+            <div className="text-bernb-scd">
+              <FaArrowRight color="white" size={18} />
+            </div>
+          </div>
+        </div>
+        <div className="sct5-btn-cnt-bernb">
+          <p className="txt-1">text 1</p>
+          <p className="txt-2">text 3</p>
+          <p className="txt-3">text 2</p>
+          <p className="txt-4">text 4</p>
+        </div>
+        <img className="bernabeu" src="../../../../src/assets/Bernabeu.png" />
       </div>
     </div>
   );
@@ -49,11 +65,6 @@ const Section5 = () => {
 
 export default Section5;
 
-
-const imgBox ={
-    width: "100%",
-    height: "680px",
-    borderRadius: 0,
-    background:
-      "linear-gradient(to right, RGBA(19, 41, 84, 1)70%, #566d95)30%"
-}
+const imgBoxSct5 = {
+  background: "linear-gradient(to right, RGBA(19, 41, 84, 1)70%, #566d95)30%",
+};

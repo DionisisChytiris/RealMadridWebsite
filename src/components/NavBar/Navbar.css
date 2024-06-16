@@ -72,13 +72,14 @@ img {
   display: flex;
   gap: 8px;
   width: 90px;
-  padding: 7px 8px;
+  padding: 8px;
   justify-content: center;
-  /* background-color: var(--gray); */
+  background-color: var(--gwhite);
   border: 2px solid blue;
   border-radius: 8px;
   /* margin-left: 10px; */
 }
+
 .signTitle {
   font-size: 14px;
   color: blue;
@@ -87,7 +88,7 @@ img {
 
 @media (max-width: 1080px) {
   .navbar{
-    /* padding: 0px 20px; */
+    /* padding: 0px 40px; */
   }
   .nav2 {
     display: none;
