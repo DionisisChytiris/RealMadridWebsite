@@ -1,15 +1,39 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, {useRef} from "react";
 import "./Section5.css";
 import "../postStyle.css";
 import Posts from "../../../../data/PostNews/Posts";
 import HomeMedium2 from "../../../Templates/HomeSectionMedium2/HomeMedium2";
 import HomeLrgImg from "../../../Templates/HomeSectionLarge/HomeLargeImg";
 import { FaArrowRight } from "react-icons/fa6";
+import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 
 const Section5 = () => {
   const data = Posts.filter((item) => item.type == "sct5a");
   const data1 = Posts.filter((item) => item.type == "sct5b");
+
+  
+  const cardsRef = useRef(null);
+
+  const handleWheel1r = (event) => {
+    event.preventDefault();
+    if (cardsRef.current) {
+      cardsRef.current.scrollBy({
+        left: -100, // Adjust the value as needed
+        behavior: "smooth",
+      });
+    }
+  };
+  const handleWheel1l = (event) => {
+    event.preventDefault();
+    if (cardsRef.current) {
+      cardsRef.current.scrollBy({
+        left: 100, // Adjust the value as needed
+        behavior: "smooth",
+      });
+    }
+  };
+
 
   return (
     <div>
@@ -25,7 +49,24 @@ const Section5 = () => {
           </div>
         );
       })}
-      <div className="medium2Section">
+       <div className="cnt-bt-bg-sds">
+      <div
+        style={{
+          position: "relative",
+          top: 160,
+          zIndex: 999,
+        }}
+        className="btns-ts"
+      >
+        {/* <div className="btns-ts"> */}
+        <div onClick={handleWheel1r} className="arw-sd-btn">
+          <RiArrowLeftSLine size={24} />
+        </div>
+        <div onClick={handleWheel1l} className="arw-sd-btn">
+          <RiArrowRightSLine size={24} />
+        </div>
+      </div>
+      <div className="medium2Section" ref={cardsRef}>
         {data1.map((item, index) => {
           return (
             <div key={index}>
@@ -38,6 +79,7 @@ const Section5 = () => {
             </div>
           );
         })}
+      </div>
       </div>
       <div style={imgBoxSct5} className="imgBox-sct5">
         <div className="text-container-sct5">

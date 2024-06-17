@@ -30,17 +30,14 @@ const Section2 = () => {
   };
 
 
-  useEffect(() => {
-    cardsRef.current.addEventListener("click", handleWheel1r);
-    cardsRef.current.addEventListener("click", handleWheel1l);
-  }, []);
+  // useEffect(() => {
+  //   cardsRef.current.addEventListener("click", handleWheel1r);
+  //   cardsRef.current.addEventListener("click", handleWheel1l);
+  // }, []);
   return (
     <div className="cnt-bt-bg-sds">
       <div
         style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
           position: "relative",
           top: 140,
           zIndex: 999,

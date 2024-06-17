@@ -65,11 +65,11 @@ const Section1 = () => {
   // };
 
   useEffect(() => {
-    cardsRef1.current.addEventListener("click", handleWheel1r);
-    cardsRef1.current.addEventListener("click", handleWheel1l);
     // cardsRef2.current.addEventListener("wheel", handleWheel2);
-    cardsRef2.current.addEventListener("click", handleClick2r);
-    cardsRef2.current.addEventListener("click", handleClick2l);
+    // cardsRef1.current.addEventListener("click", handleWheel1r);
+    // cardsRef1.current.addEventListener("click", handleWheel1l);
+    // cardsRef2.current.addEventListener("click", handleClick2r);
+    // cardsRef2.current.addEventListener("click", handleClick2l);
   }, []);
 
   return (
