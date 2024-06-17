@@ -110,10 +110,10 @@ const Section6 = () => {
           className="btns-ts"
         >
           {/* <div className="btns-ts"> */}
-          <div onClick={handleWheel1r} className="arw-sd-btn">
+          <div onClick={handleClick2r} className="arw-sd-btn">
             <RiArrowLeftSLine size={24} />
           </div>
-          <div onClick={handleWheel1l} className="arw-sd-btn">
+          <div onClick={handleClick2l} className="arw-sd-btn">
             <RiArrowRightSLine size={24} />
           </div>
         </div>

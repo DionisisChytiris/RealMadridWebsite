@@ -2,125 +2,125 @@
 export const DataFt = [
   {
     type: "Ftb1",
-    link: "/tickets",
+    link: "/firstteam1",
     title1: "Football",
     arrow: '❯'
   },
   {
     type: "Ftb1",
-    link: "/madridistas",
+    link: "/firstteam",
     title: "First Team",
   },
   {
     type: "Ftb1",
-    link: "/tour",
+    link: "/academy",
     title: "Academy",
   },
   {
     type: "Ftb1",
-    link: "/shop",
+    link: "/womensteam",
     title: "Women's Team",
   },
   {
     type: "Ftb2",
-    link: "/tickets",
+    link: "/basketfirstteam1",
     title1: "Basketball",
     arrow: '❯'
   },
   {
     type: "Ftb2",
-    link: "/tour",
+    link: "/basketfirstteam",
     title: "Basketball First Team",
   },
   {
     type: "Ftb3",
-    link: "/tickets",
+    link: "/theclub",
     title1: "The Club",
     arrow: '❯'
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/schedule",
     title: "Schedule",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/transparency",
     title: "Transparency",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/patrocinadores",
     title: "Sponsors",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/values",
     title: "Values",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/honors",
     title: "Honors",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/history",
     title: "History",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/fanclubs",
     title: "Fan clubs",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/bernabeustadium",
     title: "Bernabéu Stadium",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/realmadridcity",
     title: "Real Madrid Club",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/wizinkcenter",
     title: "WiZink Center",
   },
   {
     type: "Ftb3",
-    link: "/",
+    link: "/contact",
     title: "Contact",
   },
   {
     type: "Ftb4",
-    link: "/",
+    link: "/bernabeustadium1",
     title1: "Bernabéu Stadium",
   },  
   {
     type: "Ftb4",
-    link: "/",
+    link: "/rmtvlive",
     title1: "RMTV live",
   },  
   {
     type: "Ftb4",
-    link: "/",
+    link: "/news",
     title1: "News",
   },  
   {
     type: "Ftb4",
-    link: "/",
+    link: "/foundationrm",
     title1: "Foundation Real Madrid",
   },  
   {
     type: "Ftb4",
-    link: "/",
+    link: "/rmnext",
     title1: "RM Next",
   },  
   {
     type: "Ftb4",
-    link: "/",
+    link: "/rmgraduateschool",
     title1: "RM Graduate School",
   },  
   {

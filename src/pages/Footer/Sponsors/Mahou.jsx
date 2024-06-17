@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import './Mahou.css'
+import './styles/Mahou.css'
 
 const Mahou = () => {
   return (

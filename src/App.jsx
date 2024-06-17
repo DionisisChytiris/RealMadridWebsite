@@ -54,6 +54,10 @@ import {
 } from "./pages/PostNewsPages";
 import SignIn from "./components/SignIn/SignIn";
 import MockNotice from "./MockNotice";
+import { Academy, BasketFirstTeam, BernabeuStadium, Contact, FanClubs, FirstTeam, FoundationRM, History, Honors, News, RealMadridCity, RMGraduateSchool, RMNext, RMTVlive, Schedule, TheClub, Transparency, Values, WiZinkCenter, WomensTeam } from "./pages/Footer/MainFooterPages";
+import { Abbott, Adobe, Bantrab, BMW, Canon, Cantabria, CocaCola, Daktronics, Dubai, EASports, EasyMarkets, Hth, Mahou, Nivea, Palladium, Sanitas, Softtek, Solan, Unicaja, Zegna } from "./pages/Footer/Sponsors";
+import Cisco from "./pages/Footer/Sponsors/Cisco";
+import PlayStaion from "./pages/Footer/Sponsors/PlayStaion";
 
 function App() {
   const [showLogin, setShowLogin] = React.useState(false);
@@ -109,6 +113,51 @@ function App() {
           <Route path="/post34" element={<Post34 />} />
           <Route path="/post35" element={<Post35 />} />
           <Route path="/post36" element={<Post36 />} />
+          <Route path='/firstteam1' element={<FirstTeam/>}/>
+          <Route path='/firstteam' element={<FirstTeam/>}/>
+          <Route path='/academy' element={<Academy/>}/>
+          <Route path='/basketfirstteam1' element={<BasketFirstTeam/>}/>
+          <Route path='/basketfirstteam' element={<BasketFirstTeam/>}/>
+          <Route path='/womensteam' element={<WomensTeam/>}/>
+          <Route path='/theclub' element={<TheClub/>}/>
+          <Route path="/schedule" element={<Schedule/>}/>
+          <Route path="/transparency" element={<Transparency/>}/>
+          <Route path="/values" element={<Values/>}/>
+          <Route path="/honors" element={<Honors/>}/>
+          <Route path="/history" element={<History/>}/>
+          <Route path="/fanclubs" element={<FanClubs/>}/>
+          <Route path="/bernabeustadium1" element={<BernabeuStadium/>}/>
+          <Route path="/bernabeustadium" element={<BernabeuStadium/>}/>
+          <Route path="/realmadridcity" element={<RealMadridCity/>}/>
+          <Route path="/wizinkcenter" element={<WiZinkCenter/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/rmtvlive" element={<RMTVlive/>}/>
+          <Route path="/news" element={<News/>}/>
+          <Route path="/foundationrm" element={<FoundationRM/>}/>
+          <Route path="/rmnext" element={<RMNext/>}/>
+          <Route path="/rmgraduateschool" element={<RMGraduateSchool/>}/>
+          <Route path="/mahou" element={<Mahou/>}/>
+          <Route path="/dubai" element={<Dubai/>}/>
+          <Route path="/bmw" element={<BMW/>}/>
+          <Route path="/easports" element={<EASports/>}/>
+          <Route path="/abbott" element={<Abbott/>}/>
+          <Route path="/nivea" element={<Nivea/>}/>
+          <Route path="/cantabria" element={<Cantabria/>}/>
+          <Route path="/easymarkets" element={<EasyMarkets/>}/>
+          <Route path="/adobe" element={<Adobe/>}/>
+          <Route path="/zegna" element={<Zegna/>}/>
+          <Route path="/cisco" element={<Cisco/>}/>
+          <Route path="/palladium" element={<Palladium/>}/>
+          <Route path="/daktronics" element={<Daktronics/>}/>
+          <Route path="/softtek" element={<Softtek/>}/>
+          <Route path="/canon" element={<Canon/>}/>
+          <Route path="/unicaja" element={<Unicaja/>}/>
+          <Route path="/playstation" element={<PlayStaion/>}/>
+          <Route path="/sanitas" element={<Sanitas/>}/>
+          <Route path="/cocacola" element={<CocaCola/>}/>
+          <Route path="/solan" element={<Solan/>}/>
+          <Route path="/hth" element={<Hth/>}/>
+          <Route path="/bantrab" element={<Bantrab/>}/>
         </Routes>
       </div>
       <Footer />

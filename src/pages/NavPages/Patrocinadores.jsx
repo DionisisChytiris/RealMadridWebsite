@@ -1,9 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React,{useEffect} from "react";
 import RealLogoTopSection from "../../Templates/RealLogoTopSection";
 import './styles/patrocinadores.css'
 
 const Patrocinadores = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <RealLogoTopSection text="Listado Patrocinadores" />
