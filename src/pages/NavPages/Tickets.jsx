@@ -6,8 +6,22 @@ const Tickets = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div style={{width: '80%', height: 1200, backgroundColor: 'blue', margin: 'auto'}}>Tickets</div>
+    <div style={container}>
+    <div>Tickets</div>
+  </div>
   )
 }
 
 export default Tickets
+
+
+const container = {
+  width: '80%',
+  height: '100vh',
+  backgroundColor: 'lightblue',
+  margin: 'auto',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginBottom: '30px'
+}

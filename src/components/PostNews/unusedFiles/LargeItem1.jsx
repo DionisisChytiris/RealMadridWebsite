@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Posts from "../../../../data/PostNews/Posts";
-import HomeLrgImg from '../../../Templates/HomeSectionLarge/HomeLargeImg'
+import Posts from "../../../../../data/PostNews/Posts";
+import HomeLrgImg from '../../../../Templates/HomeSectionLarge/HomeLargeImg'
 
 const LargeItem1 = () => {
   const data1 = Posts.filter((item) => item.type == "a");

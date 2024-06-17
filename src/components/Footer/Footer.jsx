@@ -10,12 +10,21 @@ const Footer = () => {
   return (
     <>
       <DivideLine/>
-      <FooterPages />
-      <AppDownload />
-      <Sponsors />
-      <Copyright/>
+      <div style={footerBg}>
+        <FooterPages />
+        <AppDownload />
+        <Sponsors />
+        <Copyright/>
+      </div>
     </>
   );
 };
 
 export default Footer;
+
+const footerBg={
+  position: 'relative',
+  backgroundColor: 'white',
+  zIndex: 999,
+  paddingBottom: '30px'
+}

@@ -32,7 +32,7 @@ const NavBar = ({ setShowLogin }) => {
   }, [prevScrollpos]);
 
   const navbarStyle = {
-    position: 'fixed',
+    position: "fixed",
     top: `${top}px`,
     transition: "top 0.8s",
     display: "flex",
@@ -47,8 +47,7 @@ const NavBar = ({ setShowLogin }) => {
   };
 
   const [showModal, setShowModal] = useState(false);
- const [scrollDisabled, setScrollDisabled] = useState(false);
-
+  const [scrollDisabled, setScrollDisabled] = useState(false);
 
   useEffect(() => {
     if (scrollDisabled) {
@@ -64,17 +63,15 @@ const NavBar = ({ setShowLogin }) => {
   const handleOpenModal = () => {
     setShowModal(!showModal);
     setScrollDisabled(!scrollDisabled);
-
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
     setScrollDisabled(false);
-
   };
 
   return (
-    <div style={navbarStyle}>
+    <div style={navbarStyle} >
       <div className="nav1">
         <div onClick={handleOpenModal}>
           <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
@@ -89,7 +86,7 @@ const NavBar = ({ setShowLogin }) => {
           alt="Trophy"
         />
       </div>
-      <Modal show={showModal}  onClose={handleCloseModal} />
+      <Modal show={showModal} onClose={handleCloseModal} />
       <div className="nav2">
         {NavData.map((item, index) => {
           return (
@@ -114,12 +111,14 @@ const NavBar = ({ setShowLogin }) => {
           <a href="https://www.adidas.co.uk/football" target="_blank">
             <img src={assets.adidas} alt="" className="adidasIcon" />
           </a>
-          <div>.</div>
+          <div className="dots-ts" >
+            <Link to="/patrocinadores">
+              <img src={assets.dots} alt="dots" className="dots" />
+            </Link>
+          </div>
         </div>
         <button
-          onClick={() => (
-            setShowLogin(true), 
-            setScrollDisabled(true))}
+          onClick={() => (setShowLogin(true), setScrollDisabled(true))}
           className="signIn"
         >
           <div>

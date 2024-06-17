@@ -3,6 +3,7 @@ import real_trophy from './CABECERA.png'
 import hamburgerMenu from './svg/hamburger-menu-svgrepo-com.svg'
 import emirates from './svg/emirates_gray.svg'
 import adidas from './svg/adidas_gray.svg'
+import dots from './dots-vertical-svgrepo-com.svg'
 import president from './img1.png'
 import mbappe from './img4.png'
 import img2 from './img2.png'
@@ -33,6 +34,8 @@ import videoBernabeu from './videoBernabeu.mp4'
 import RealLogoPhoto from './FOTO_ESCUDO_COMUNICADO_OFICIAL.webp'
 import EuropeanCups from './ND_15_COPAS_TOUR___AV19296.webp'
 import LaDecimoquinta from './ND_CHAMPIONS_FINAL_BORUSSIA_RM_LEVANTAMIENTO_COPA_GRUPOGettyImages_2155639288.jpeg'
+import BernabeuMuseum from './BernabeuMuseum.jpg'
+import RealLogoGray from './reallogogray.png'
 
 export const assets = {
     real_logo,
@@ -40,6 +43,7 @@ export const assets = {
     hamburgerMenu,
     emirates,
     adidas,
+    dots,
     president,
     mbappe,
     img2,
@@ -69,5 +73,7 @@ export const assets = {
     videoBernabeu,
     RealLogoPhoto,
     EuropeanCups,
-    LaDecimoquinta
+    LaDecimoquinta,
+    BernabeuMuseum,
+    RealLogoGray
 }

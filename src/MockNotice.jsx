@@ -25,6 +25,8 @@ const MockNotice = () => {
 export default MockNotice;
 
 const mock = {
+  position: 'relative',
+  zIndex: 99999,
   width: "70%",
   margin: "auto",
   height: "200px",

@@ -1,0 +1,35 @@
+.listado-cnt{
+    width: 60%;
+    margin: 20px auto 40px
+}
+.listado-lg-tx{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--darkblue1);
+    padding-top: 20px
+}
+.listado-md-tx{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--darkblue1);
+    padding: 20px 0px;
+}
+.listado-sm-tx{
+    font-size: 20px;
+    color: var(--darkblue1);
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   color: blue;
+    text-decoration: underline;
+}
+/* .listado-sm-tx:hover{
+    color: rgb(19, 19, 163)
+} */
+
+
+@media (max-width: 1080px) {
+    .listado-cnt {
+      width: 80%
+    }
+  }

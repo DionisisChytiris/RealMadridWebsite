@@ -12,6 +12,7 @@ import {
   Tour,
   Shop,
   RMPlay,
+  Patrocinadores
 } from "./pages/NavPages";
 import {
   Post1,
@@ -61,7 +62,7 @@ function App() {
     <>
       {showLogin ? <SignIn setShowLogin={setShowLogin} /> : <></>}
       <div className="app">
-        <MockNotice />
+        {/* <MockNotice /> */}
         <NavBar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -71,6 +72,7 @@ function App() {
           <Route path="/tour" element={<Tour />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/rmplay" element={<RMPlay />} />
+          <Route path="/patrocinadores" element={<Patrocinadores/>}/>
           <Route path="/post1" element={<Post1 />} />
           <Route path="/post2" element={<Post2 />} />
           <Route path="/post3" element={<Post3 />} />

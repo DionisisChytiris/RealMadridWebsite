@@ -1,9 +1,16 @@
 .smallSection {
+  position: relative;
+  z-index: 1;
   width: 80%;
   margin: auto;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(19vw, 1fr));
+  align-items: center;
+}
+
+.arw-sd-btn{
+  display: none;
 }
 
 .smallSection.sct1b{
@@ -92,20 +99,48 @@
 @media (max-width: 1050px) {
   .smallSection {
     padding-left: 7%;
+    padding-right: 7%;
     /* width: 85%; */
-    margin: auto;
+    /* margin: auto; */
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
     width: 100%;
     overflow-x: hidden;
   }
+  .arw-sd-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: -55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(154, 151, 151)
+  }
+  .cnt-bt-bg-sds:hover .arw-sd-btn{ 
+    background-color: var(--lightgray2);
+    color: blue
+    
+  }
+  .btns-ts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 60;
+    z-index: 999;
+  }
+  
   .mediumSection {
     width: 100%;
     padding-left: 7%;
+    padding-right: 7%;
     overflow-x: hidden;
   }
   .medium2Section {
     padding-left: 7%;
+    padding-right: 7%;
     /* margin: auto; */
     display: grid;
     grid-template-columns: 400px 400px 400px;
@@ -123,14 +158,17 @@
     grid-template-columns: 250px 250px 250px 250px;
     width: 100%;
     padding-left: 3%;
+    padding-right: 3%;
     overflow-x: hidden;
 
   }
   .mediumSection {
     padding-left: 3%;
+    padding-right: 3%;
   }
   .medium2Section {
     padding-left: 3%;
+    padding-right: 3%;
     grid-template-columns: 250px 250px 250px 250px;
 
   }
@@ -138,11 +176,11 @@
 
 @media (max-width: 660px) {
   .smallSection {
-    padding-left: 3%;
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
     width: 100%;
     padding-left: 3%;
+    padding-right: 3%;
     overflow-x: hidden;
   }
   /* .medium2Section{

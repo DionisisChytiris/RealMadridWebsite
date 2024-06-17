@@ -4,7 +4,7 @@ import React from "react";
 import ReactDom from "react-dom";
 import "./SignIn.css";
 import { assets } from "../../assets/assets";
-import { LuTextCursorInput } from "react-icons/lu";
+import { LuDot } from "react-icons/lu";
 
 const SignIn = () => {
   return ReactDom.createPortal(
@@ -38,11 +38,26 @@ const SignIn = () => {
       <div className="sign-in-btn">Continue</div>
       <div className="spt-txt-btm">
         We will use your email address to check if you already have an account.
-        You can exercise your rights at <span>oposicion@corp.realmadrid.com</span> and get
-        more information here.
+        You can exercise your rights at{" "}
+        <span>oposicion@corp.realmadrid.com</span> and get more information
+        here.
       </div>
       <div className="footer-sign-in">
-        <div>hello</div>
+        <div className="ft-sing-in-logo-bx">
+          <div>
+            <img src={assets.real_logo} alt="real_logo" />
+          </div>
+          <div className="txt-ft-lgin">Real Madrid © 2024. All rights reserved.</div>
+        </div>
+        <div className="ft-sing-in-logo-bx">
+          <a>Legal notice</a>
+          <LuDot style={{ color: "#0f2145", fontSize: "18px" }} />
+          <a>Cookies policy</a>
+          <LuDot style={{ color: "#0f2145", fontSize: "18px" }} />
+          <a>Privacy policy</a>
+          <LuDot style={{ color: "#0f2145", fontSize: "18px" }} />
+          <a href="/">realmadrid.com</a>
+        </div>
       </div>
     </div>,
     document.getElementById("portal")

@@ -1,10 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import {
-  LargeItem1,
-  SmallItem,
-  SmallItem1,
-  SmallItem2,
   Section6,
   Section2,
   Section3,

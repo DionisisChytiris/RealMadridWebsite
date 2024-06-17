@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import HomeSmallImg from "../../Templates/HomeSectionSmall/HomeSmallImg";
+import HomeSmallImg from "../../../Templates/HomeSectionSmall/HomeSmallImg";
 import "./postStyle.css";
-import Posts from "../../../data/PostNews/Posts";
+import Posts from "../../../../data/PostNews/Posts";
 
 const SmallItem = () => {
   const data = Posts.filter((item) => item.type == "b");
