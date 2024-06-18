@@ -13,7 +13,7 @@ const HomeMedium2 = ({ link, img, alt, title }) => {
             <img src={img} alt={alt} />
           </div>
           <div className="titleBoxM2">
-            <div className="titleM">{title}</div>
+            <div className="titleM2">{title}</div>
           </div>
         </div>
       </Link>

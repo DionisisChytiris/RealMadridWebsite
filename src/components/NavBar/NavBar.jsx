@@ -7,6 +7,7 @@ import { NavData } from "../../../data/NavBar/NavData";
 import { assets } from "../../assets/assets";
 import { FaRegUser } from "react-icons/fa6";
 import Modal from "./Modal";
+import { BiBorderRadius } from "react-icons/bi";
 
 const NavBar = ({ setShowLogin }) => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -63,18 +64,36 @@ const NavBar = ({ setShowLogin }) => {
   const handleOpenModal = () => {
     setShowModal(!showModal);
     setScrollDisabled(!scrollDisabled);
+    setBackgroundColor(showModal ? 'transparent': '#c4e1fb')
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
     setScrollDisabled(false);
+    setBackgroundColor('transparent')
   };
 
+  const [backgroundColor, setBackgroundColor] = useState('transparent');
+  const menuIc={
+    backgroundColor: backgroundColor,
+    transition: 'background-color 0.5s ease',
+    borderRadius: '8px',
+  }
+
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    setIsFocused(false);
+  };
   return (
     <div style={navbarStyle} >
       <div className="nav1">
         <div onClick={handleOpenModal}>
-          <img src={assets.hamburgerMenu} alt="" className="menuIcon" />
+          <img src={assets.hamburgerMenu} alt="" style={menuIc}className="menuIcon" />
         </div>
         <Link to="/">
           <img src={assets.real_logo} alt="Logo" />
@@ -90,12 +109,13 @@ const NavBar = ({ setShowLogin }) => {
       <div className="nav2">
         {NavData.map((item, index) => {
           return (
-            <div key={index}>
+            <div key={index} >
               <NavLink
                 to={item.link}
                 style={({ isActive }) => ({
                   color: isActive ? "blue" : "#21416E",
                 })}
+              
               >
                 {item.title}
               </NavLink>

@@ -7,9 +7,9 @@ import HomeSmallImg from "../../../Templates/HomeSectionSmall/HomeSmallImg";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 
 const Section1 = () => {
-  const data1 = Posts.filter((item) => item.type == "a");
-  const data2 = Posts.filter((item) => item.type == "b");
-  const data3 = Posts.filter((item) => item.type == "b");
+  const data1 = Posts.filter((item) => item.type == "sct1");
+  const data2 = Posts.filter((item) => item.type == "sct3");
+  const data3 = Posts.filter((item) => item.type == "sct2");
 
   const cardsRef1 = useRef(null);
   const cardsRef2 = useRef();

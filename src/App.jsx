@@ -55,7 +55,7 @@ import {
 import SignIn from "./components/SignIn/SignIn";
 import MockNotice from "./MockNotice";
 import { Academy, BasketFirstTeam, BernabeuStadium, Contact, FanClubs, FirstTeam, FoundationRM, History, Honors, News, RealMadridCity, RMGraduateSchool, RMNext, RMTVlive, Schedule, TheClub, Transparency, Values, WiZinkCenter, WomensTeam } from "./pages/Footer/MainFooterPages";
-import { Abbott, Adobe, Bantrab, BMW, Canon, Cantabria, CocaCola, Daktronics, Dubai, EASports, EasyMarkets, Hth, Mahou, Nivea, Palladium, Sanitas, Softtek, Solan, Unicaja, Zegna } from "./pages/Footer/Sponsors";
+import { Abbott, Adidas, Adobe, Bantrab, BMW, Canon, Cantabria, CocaCola, Daktronics, Dubai, EASports, EasyMarkets, Emirates, HP, Hth, Mahou, Nivea, Palladium, Sanitas, Softtek, Solan, Unicaja, Zegna } from "./pages/Footer/Sponsors";
 import Cisco from "./pages/Footer/Sponsors/Cisco";
 import PlayStaion from "./pages/Footer/Sponsors/PlayStaion";
 
@@ -158,6 +158,9 @@ function App() {
           <Route path="/solan" element={<Solan/>}/>
           <Route path="/hth" element={<Hth/>}/>
           <Route path="/bantrab" element={<Bantrab/>}/>
+          <Route path="/emirates" element={<Emirates/>}/>
+          <Route path="/adidas" element={<Adidas/>}/>
+          <Route path="/hp" element={<HP/>}/>
         </Routes>
       </div>
       <Footer />

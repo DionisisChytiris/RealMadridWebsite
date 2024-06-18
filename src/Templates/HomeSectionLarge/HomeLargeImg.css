@@ -2,7 +2,7 @@
   width: "80%";
   margin: "0px auto 50px" 
 } */
-.container {
+.container-lg-img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   position: relative;
@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 1900px) {
-  .container {
+  .container-lg-img {
     width: 85%;
   }
 }
@@ -90,7 +90,7 @@
 }
 
 @media (max-width: 1050px) {
-  .container {
+  .container-lg-img {
     display: block;
   }
   .part1 {
@@ -109,7 +109,7 @@
   }
 }
 @media (max-width: 850px) {
-  .container {
+  .container-lg-img {
     width: 94%;
   }
 }

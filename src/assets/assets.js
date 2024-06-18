@@ -1,5 +1,5 @@
 import real_logo from './real-madrid-logo.png'
-import real_trophy from './CABECERA.png'
+import real_trophy from './CABECERA_PARCHE_15_nuevo.webp'
 import hamburgerMenu from './svg/hamburger-menu-svgrepo-com.svg'
 import emirates from './svg/emirates_gray.svg'
 import adidas from './svg/adidas_gray.svg'

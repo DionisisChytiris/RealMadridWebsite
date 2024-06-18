@@ -26,16 +26,12 @@ img {
   height: 45px;
 }
 .menuIcon {
-  /* fill: red; */
-  width: 32px;
-  height: 32px;
-  /* fill: var(--darkblue) */
+  width: 38px;
+  height: 38px;
+  padding: 3px;
+ color: rgb(129, 188, 239)
 }
-.menuIcon:hover {
-  background-color: green;
-  border-radius: 5px;
-  padding: 5px;
-}
+
 
 .nav2 {
   display: flex;

@@ -1,41 +1,72 @@
 import { assets } from "../../src/assets/assets";
+import { assetsHm } from "../../src/assets/HomePageImages/assetsHm";
 
 const Posts = [
+  // SECTION 1
   {
-    type: "a",
+    type: "sct1",
     link: "/post1",
-    img: assets.president,
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real Madrid Sport City"
+    img: assetsHm.Trofeos,
+    alt: "Trofeos",
+    title: "La Decimoquinta, La Liga and the Spanish Super Cup, three trophies for Real Madrid in 2023/24."
   },
   {
-    type: "b",
+    type: "sct2",
     link: "/post2",
-    img: assets.img2,
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real Madrid Sport City"
+    img: assetsHm.Alocen,
+    alt: "Alocen",
+    title: "Official Announcement: Alocén"
   },
   {
-    type: "b",
+    type: "sct2",
     link: "/post3",
-    img: assets.img3,
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real"
+    img: assetsHm.BalonceloTrofeos,
+    alt: "Baloncelo Trofeos",
+    title: "Real Madrid's league, Copa del Rey and Super Cup treble in basketball"
   },
   {
-    type: "b",
+    type: "sct2",
     link: "/post4",
-    img: assets.img4,
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real Madrid Sport City dith herafd "
+    img: assetsHm.MbappeNd,
+    alt: "Mbappe",
+    title: "0-1: Mbappé and Camavinga help France defeat Austria "
   },
   {
-    type: "b",
+    type: "sct2",
     link: "/post5",
-    img: '../../src/assets/_330781615089.webp',
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real Madrid Sport City"
+    img: assetsHm.HomeJersey,
+    alt: "Home Jersey",
+    title: "Here is the new 2024-25 season jersey"
   },
+  {
+    type: "sct3",
+    link: "/post6",
+    img: assetsHm.HomeJersey,
+    alt: "Home Jersey",
+    title: "Here is the new 2024-25 season jersey"
+  },
+  {
+    type: "sct3",
+    link: "/post7",
+    img: assetsHm.HomeJersey,
+    alt: "Home Jersey",
+    title: "Here is the new 2024-25 season jersey"
+  },
+  {
+    type: "sct3",
+    link: "/post8",
+    img: assetsHm.HomeJersey,
+    alt: "Home Jersey",
+    title: "Here is the new 2024-25 season jersey"
+  },
+  {
+    type: "sct3",
+    link: "/post9",
+    img: assetsHm.HomeJersey,
+    alt: "Home Jersey",
+    title: "Here is the new 2024-25 season jersey"
+  },
+  // SECTION 2
   {
     type: "c",
     link: "/post5",

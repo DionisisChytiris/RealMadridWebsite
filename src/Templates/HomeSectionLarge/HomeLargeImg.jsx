@@ -17,7 +17,7 @@ const HomeLrgImg = ({ link1, img, alt, title }) => {
   };
   return (
     <Link to={link1}>
-      <div className="container">
+      <div className="container-lg-img">
         <div
           className="part1"
           onMouseOver={handleMouseOver}
