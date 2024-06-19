@@ -7,7 +7,6 @@ import { NavData } from "../../../data/NavBar/NavData";
 import { assets } from "../../assets/assets";
 import { FaRegUser } from "react-icons/fa6";
 import Modal from "./Modal";
-import { BiBorderRadius } from "react-icons/bi";
 
 const NavBar = ({ setShowLogin }) => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -115,7 +114,6 @@ const NavBar = ({ setShowLogin }) => {
                 style={({ isActive }) => ({
                   color: isActive ? "blue" : "#21416E",
                 })}
-              
               >
                 {item.title}
               </NavLink>

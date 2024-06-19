@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* TourTickets Page */
+.tr-tcks-cnt{
+    width: 900px;
+    /* height: 800px; */
+    margin: auto;
+    padding: 70px 0px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.tr-tcks-cnt-title1{
+    color: white;
+    font-size: 20px;
+    /* font-weight: 500; */
+    font-family:"Oswald", sans-serif
+}
+.tr-tcks-title-ext-lg{
+    margin-top: 5px;
+    color: white;
+    font-size: 68px;
+    font-weight: 500;
+    font-family:"Oswald", sans-serif
+}
+.tr-tcks-cnt-title2{
+    color: rgb(228, 224, 224);
+    font-size: 26px;
+    /* font-weight: 500; */
+    font-family:"Oswald", sans-serif;
+    margin: 20px 0px;
+}
+.tr-tcks-cnt-title3{
+    color: rgb(227, 224, 224);
+    font-size: 28px;
+    /* font-weight: 500; */
+    font-family:"Oswald", sans-serif;
+    margin: 20px 0px;
+}
+.tr-tcks-cnt-boxes{
+    width: 80%;
+    margin: 60px auto ;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* background-color: yellow; */
+}
+.tr-tcks-cnt-box1{
+    width: 32%;
+    margin: auto;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+/* Notice Page */
+.ntc-cnt-tr-pg{
+    width: 100%;
+    background-color: white;
+}
+.ntc-bx-tr{
+    width: 1200px;
+    height: '100%';
+    margin: auto;
+}
+.ntc-tr-title-lg{
+    padding-top: 90px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--darkblue3);
+    margin-bottom: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ntx-tr-text-sm{
+    font-size: 15px;
+    line-height: 1.6em;
+    margin-bottom: 25px;
+    color: rgb(97, 97, 98)
+}
+.ntx-tr-text-sm span{
+    color: var(--darkblue1);
+    font-weight: 600;
+}
+.ntx-tr-text-dot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    gap: 5px
+}
+.ntx-tr-text-sm-nospace{
+    font-size: 15px;
+    line-height: 1.6em;
+    color: rgb(97, 97, 98)
+}
+.ntc-bx-tr-slider{
+    width: 100%;
+    /* height: 400px; */
+    background-color: blueviolet;
+}
+
+/* ComeToTour */
+.ntc-cm-to-tr{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+@media (max-width: 1380px) {
+    .ntc-bx-tr{
+        width: 85% ;
+    }
+    .ntc-cm-to-tr{
+        width: 85% ;
+    }
+}
+
+@media (max-width: 1080px) {
+    .tr-tcks-cnt{
+        width: 85% ;
+    }
+    .ntc-cm-to-tr{
+        width: 95% ;
+    }
+    .ntc-bx-tr{
+        width: 95% ;
+    }
+  }
+
+@media (max-width: 780px) {
+    .tr-tcks-cnt{
+        width: 95% ;
+    }
+  }
+  

@@ -1,6 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import { assets } from "../../assets/assets";
+import TourTickets from "../../components/Tour/TourTickets";
+import Notice from "../../components/Tour/Notice";
+import ComeToTour from "../../components/Tour/ComeToTour";
+import FQA from "../../components/Tour/FQA";
 
 const Tour = () => {
   useEffect(() => {
@@ -9,13 +13,11 @@ const Tour = () => {
   return (
     <div>
       <div style={bgImg}/>
-      <div style={{width: '100%', height:'100vh', zIndex: 999, position: 'relative'}}>
-        <div style={{width: '200px', height: '300px', backgroundColor: 'yellow', margin: 'auto'}}>hey</div>
-        <div style={{width: '200px', height: '300px', backgroundColor: 'yellow', margin: 'auto'}}>hey</div>
-        <div style={{width: '200px', height: '300px', backgroundColor: 'yellow', margin: 'auto'}}>hey</div>
-        <div style={{width: '200px', height: '300px', backgroundColor: 'yellow', margin: 'auto'}}>hey</div>
-        <div style={{width: '200px', height: '300px', backgroundColor: 'yellow', margin: 'auto'}}>hey</div>
-       
+      <div style={{width: '100%', zIndex: 999, position: 'relative', marginBottom: '-180px'}}>
+        <TourTickets/>
+        <Notice/>
+        <ComeToTour/>
+        <FQA/>
       </div>
     </div>
   );
@@ -28,7 +30,7 @@ const bgImg = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   width: "100%",
-  height: "100vh",
+  // height: "1000px",
   position: "fixed",
   top: 0,
   bottom: 0,

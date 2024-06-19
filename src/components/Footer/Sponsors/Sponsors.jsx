@@ -61,7 +61,7 @@ const Sponsors = () => {
             <FaFacebook style={{ color: "#0f2145", fontSize: "25px" }} />
           </a>
           <a href="https://www.instagram.com/realmadrid/" target="_blank">
-            <FaInstagram style={{ color: "#0f2145", fontSize: "27px" }} />
+            <FaInstagram style={{ color: "#0f2145", fontSize: "27px"}} />
           </a>
           <a href="https://x.com/realmadrid" target="_blank">
             <FaXTwitter style={{ color: "#0f2145", fontSize: "27px" }} />
