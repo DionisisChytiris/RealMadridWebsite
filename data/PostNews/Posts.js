@@ -41,16 +41,16 @@ const Posts = [
   {
     type: "sct3",
     link: "/post6",
-    img: assetsHm.HomeJersey,
-    alt: "Home Jersey",
-    title: "Here is the new 2024-25 season jersey"
+    img: assetsHm.Sergio,
+    alt: "Official Announcement: Sergio Rodríguez",
+    title: "Official Announcement: Sergio Rodríguez"
   },
   {
     type: "sct3",
     link: "/post7",
-    img: assetsHm.HomeJersey,
-    alt: "Home Jersey",
-    title: "Here is the new 2024-25 season jersey"
+    img: assetsHm.Carvajal,
+    alt: "Carvajal",
+    title: "1-0: Carvajal leads Spain in their win over Italy to qualify for the last 16"
   },
   {
     type: "sct3",

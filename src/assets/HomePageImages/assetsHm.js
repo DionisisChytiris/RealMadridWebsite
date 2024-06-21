@@ -13,6 +13,8 @@ import photo8 from './photo8.webp'
 import photo9 from './photo9.webp'
 import photo10 from './photo10.webp'
 import photo11 from './photo11.webp'
+import Sergio from './ND_SERGIO_RODRIGUEZ_EUROLIGA_COPA_2VC4965.webp'
+import Carvajal from './ND_CARVAJAL_ESPANA_ITALIA_01_GettyImages_2157880677.webp'
 
 export const assetsHm ={
     Trofeos,
@@ -30,4 +32,6 @@ export const assetsHm ={
     photo9,
     photo10,
     photo11,
+    Sergio,
+    Carvajal
 }
