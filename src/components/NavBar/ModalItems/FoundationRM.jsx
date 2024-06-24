@@ -15,7 +15,7 @@ const FoundationRMItem = () => {
             style={{
               fontSize: 22,
               paddingBottom: 4,
-              color: isOpen ? "black" : "lightgray",
+              color: isOpen ? "black" : "#aeb4c5",
               transition: "color 0.6s ease-in-out",
             }}
           />
@@ -49,4 +49,5 @@ const flexbox = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
+  width: '54%'
 };

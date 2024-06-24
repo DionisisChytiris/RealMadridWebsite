@@ -1,0 +1,40 @@
+
+  .first-team-img-item {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    width: 288px;
+    height: 384px;
+    border-radius: 25px;
+    background: linear-gradient(to top, rgb(0, 13, 255), rgb(234, 238, 245));
+    position: relative;
+    transition: transform 0.8s ease;
+    margin-right: 25px
+    
+  }
+  .first-team-img-item:hover{
+      transform: translateY(-10px);
+      box-shadow:  0px 10px 25px 5px rgba(86, 67, 192, 0.3);
+  }
+  
+  .first-team-img-item img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1, 1);
+    transition: 1.8s;
+  
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    
+   
+  .first-team-img-item{
+    width: 228px;
+    height: 304px;
+  }
+  }
+  

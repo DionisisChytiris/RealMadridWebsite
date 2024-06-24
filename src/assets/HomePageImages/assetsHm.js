@@ -15,6 +15,9 @@ import photo10 from './photo10.webp'
 import photo11 from './photo11.webp'
 import Sergio from './ND_SERGIO_RODRIGUEZ_EUROLIGA_COPA_2VC4965.webp'
 import Carvajal from './ND_CARVAJAL_ESPANA_ITALIA_01_GettyImages_2157880677.webp'
+import Eurocopa from './EUROCOPA_2024.webp'
+import NinethAvv from './NinethAnniv.webp'
+import Alaba32 from './Alaba32.webp'
 
 export const assetsHm ={
     Trofeos,
@@ -33,5 +36,8 @@ export const assetsHm ={
     photo10,
     photo11,
     Sergio,
-    Carvajal
+    Carvajal,
+    Eurocopa, 
+    NinethAvv,
+    Alaba32
 }

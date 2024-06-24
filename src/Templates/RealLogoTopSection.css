@@ -6,6 +6,7 @@
   padding-top: 60px;
   position: relative;
   z-index: -1;
+  overflow: hidden;
 }
 
 .rl-lg-tp-sct-txt {
@@ -37,9 +38,9 @@
 }
 
 @media (max-width: 680px) {
-    .rl-lg-tp-sct {
-        height: 80px;
-      }
+  .rl-lg-tp-sct {
+    height: 80px;
+  }
   .rl-lg-tp-sct-txt {
     font-size: 35px;
   }

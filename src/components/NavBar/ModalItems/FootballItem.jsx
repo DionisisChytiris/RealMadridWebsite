@@ -14,20 +14,20 @@ const FootballItem = () => {
               style={{
                 fontSize: 22,
                 paddingBottom: 4,
-                color: isOpen ? "black" : "lightgray",
+                color: isOpen ? "black" : "#aeb4c5",
                 transition: "color 0.5s ease",
               }}
             />
           </div>
         </div>
         <div className={`dropdown-menu ${isOpen ? "open" : ""}`}>
-          <a href="" className="dropdown-item">
+          <a href="/firstteam" className="dropdown-item">
             First Team
           </a>
-          <a href="" className="dropdown-item">
+          <a href="/womensteam" className="dropdown-item">
             Women&apos;s Team
           </a>
-          <a href="" className="dropdown-item">
+          <a href="/academy" className="dropdown-item">
             Academy
           </a>
         </div>
@@ -49,4 +49,5 @@ const title = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    width: '54%'
   }

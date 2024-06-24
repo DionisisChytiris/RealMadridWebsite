@@ -24,6 +24,6 @@ const logo = {
   position: "absolute",
   top: 20,
   right: 0,
-  zIndex: -1,
+  zIndex: 10,
 };
 

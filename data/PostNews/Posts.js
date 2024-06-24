@@ -55,35 +55,35 @@ const Posts = [
   {
     type: "sct3",
     link: "/post8",
-    img: assetsHm.HomeJersey,
-    alt: "Home Jersey",
-    title: "Here is the new 2024-25 season jersey"
+    img: assetsHm.Eurocopa,
+    alt: "Eurocopa",
+    title: "Match schedule for madridistas at Euro 2024"
   },
   {
     type: "sct3",
     link: "/post9",
-    img: assetsHm.HomeJersey,
-    alt: "Home Jersey",
-    title: "Here is the new 2024-25 season jersey"
+    img: assets.img4,
+    alt: "Mbappé signs for Real Madrid",
+    title: "Mbappé signs for Real Madrid"
   },
   // SECTION 2
   {
     type: "c",
-    link: "/post5",
-    img: '../../src/assets/_330781615089.webp',
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real Madrid Sport City"
+    link: "/post10",
+    img: assetsHm.NinethAvv,
+    alt: "Ninth anniversary",
+    title: "Ninth anniversary of club's 32nd basketball league title"
   },
   {
     type: "c",
-    link: "/post5",
-    img: '../../src/assets/_330781615089.webp',
-    alt: "Florentino Pérez",
-    title: "La Decimoquinta is now at Real Madrid Sport City"
+    link: "/post11",
+    img: assetsHm.Alaba32,
+    alt: "Alaba turns 32",
+    title: "Alaba turns 32"
   },
   {
     type: "c",
-    link: "/post5",
+    link: "/post12",
     img: '../../src/assets/_330781615089.webp',
     alt: "Florentino Pérez",
     title: "La Decimoquinta is now at Real Madrid Sport City"

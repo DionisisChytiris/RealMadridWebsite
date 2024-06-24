@@ -10,11 +10,11 @@ const BasketballItem = () => {
         <div style={flexbox} onClick={()=>setIsOpen(!isOpen)}>
           <div style={title}>Basketball</div>
           <div>
-          <IoIosArrowDown style={{fontSize: 22, paddingBottom: 4,color: isOpen? 'black':'lightgray', transition: 'color 0.6s ease-in-out'}}/>
+          <IoIosArrowDown style={{fontSize: 22, paddingBottom: 4,color: isOpen? 'black': '#aeb4c5', transition: 'color 0.6s ease-in-out'}}/>
           </div>
         </div>
         <div  className={`dropdown-menu ${isOpen ? 'open' : ''}`}>
-          <a href='' className="dropdown-item">Basketball First Team</a>
+          <a href='/basketfirstteam' className="dropdown-item">Basketball First Team</a>
         </div>
       </div>
   )
@@ -34,4 +34,5 @@ const title = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    width: '54%'
   }

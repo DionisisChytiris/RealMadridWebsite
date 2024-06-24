@@ -1,0 +1,1 @@
+SideBarMenu:  src -> components -> NavBar -> Modal.jsx

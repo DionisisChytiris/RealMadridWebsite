@@ -9,6 +9,8 @@
 }
 
 .modal-content {
+  /* position: relative;
+  z-index: 9999999; */
   background: white;
   border-radius: 5px;
   position: fixed;
@@ -43,7 +45,7 @@
   display: none;
 }
 .md-cnt-sct2{
-  width: 130%;
+  width: 180%;
   /* background-color: aqua; */
   padding: 60px 0px 0px 60px
 }
@@ -97,7 +99,7 @@
     position: fixed;
     bottom: 0;
     width: 32%;
-    height: 150px;
+    height: 60px;
     padding: 20px 20px 10px 20px;
     background-color: var(--lightgray1);
   }
