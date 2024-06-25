@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavData } from "../../../data/NavBar/NavData";
 import { HiMiniLanguage } from "react-icons/hi2";
@@ -17,6 +17,14 @@ import OnlineShopItem from "./ModalItems/OnlineShop";
 import { assets } from "../../assets/assets";
 
 const Modal = ({ show, onClose, open }) => {
+  const [op1, setOp1] = useState(false); //Football
+  const [op2, setOp2] = useState(false); //Basketball
+  const [op3, setOp3] = useState(false); //The club
+  const [op4, setOp4] = useState(false); //Bernabeu
+  const [op5, setOp5] = useState(false); //News
+  const [op6, setOp6] = useState(false); //Foundation
+  const [op7, setOp7] = useState(false); //RM Graduate
+  const [op8, setOp8] = useState(false); //OnlineShop
   if (!show) {
     return null;
   }
@@ -43,8 +51,27 @@ const Modal = ({ show, onClose, open }) => {
             </div>
             {/* Section 2 */}
             <div className="md-cnt-sct2">
-              <FootballItem />
-              <BasketballItem />
+              <FootballItem
+                op1={op1}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
+              <BasketballItem 
+                op2={op2}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8} />
               {/* Schedule */}
               <div className="md-cnt-dropdown">
                 <div style={flexbox}>
@@ -62,11 +89,61 @@ const Modal = ({ show, onClose, open }) => {
                 </div>
               </div>
 
-              <TheClubItem />
-              <BernabeuStdItem />
-              <NewsItem />
-              <FoundationRMItem />
-              <RMGraduateScItem />
+              <TheClubItem 
+                op3={op3}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
+              <BernabeuStdItem 
+                op4={op4}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
+              <NewsItem 
+                op5={op5}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
+              <FoundationRMItem 
+                op6={op6}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
+              <RMGraduateScItem 
+                op7={op7}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
               {/* RM Next */}
               <div className="md-cnt-dropdown">
                 <div style={flexbox}>
@@ -76,7 +153,17 @@ const Modal = ({ show, onClose, open }) => {
                 </div>
               </div>
 
-              <OnlineShopItem />
+              <OnlineShopItem 
+                op8={op8}
+                setOp1={setOp1}
+                setOp2={setOp2}
+                setOp3={setOp3}
+                setOp4={setOp4}
+                setOp5={setOp5}
+                setOp6={setOp6}
+                setOp7={setOp7}
+                setOp8={setOp8}
+              />
             </div>
             {/* Section 3 */}
             <div className="md-cnt-sct3">

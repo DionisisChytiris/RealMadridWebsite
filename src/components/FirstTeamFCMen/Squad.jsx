@@ -1,41 +1,38 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useRef } from "react";
 import "./StylesFT.css";
-import img1 from "../../assets/FC/_80x501_COURTOIS_15.webp";
-import img2 from "../../assets/FC/_80x501_LUNIN_15.webp";
-import img3 from "../../assets/FC/_80x501_KEPA_15.webp";
 import FirstTeamItem from "../../Templates/FirstTeamItem/FirstTeamItem";
 import FTMenFC from "../../../data/FirstTeam/FTMenFC";
-
-const data = [
-  {
-    link: "/",
-    img: img1,
-    number: 1,
-    name: "Courtois",
-    position: "Goalkeeper",
-  },
-  {
-    link: "/tour",
-    img: img2,
-    number: 13,
-    name: "Lunin",
-    position: "Goalkeeper",
-  },
-  {
-    link: "/",
-    img: img3,
-    number: 25,
-    name: "Arrizabalaga",
-    position: "Goalkeeper",
-  },
-];
+import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 
 const Squad = () => {
   const data1 = FTMenFC.filter((item) => item.position == "Goalkeeper");
   const data2 = FTMenFC.filter((item) => item.position == "Defender");
   const data3 = FTMenFC.filter((item) => item.position == "Midfielder");
   const data4 = FTMenFC.filter((item) => item.position == "Forward");
+
+  const teamRef1 = useRef(null);
+  const teamRef2 = useRef();
+
+  const handleRight1 = (event) => {
+    event.preventDefault();
+    if (teamRef1.current) {
+      teamRef1.current.scrollBy({
+        left: -300, // Adjust the value as needed
+        behavior: "smooth",
+      });
+    }
+  };
+  const handleleft1 = (event) => {
+    event.preventDefault();
+    if (teamRef1.current) {
+      teamRef1.current.scrollBy({
+        left: 300, // Adjust the value as needed
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="ft-fc-men-cnt">
       {/* Goalkeeper */}
@@ -59,22 +56,33 @@ const Squad = () => {
         </div>
       </div>
       {/* Defender */}
+
       <div className="ft-fc-sct1">
         <div className="ft-fc-title">Defender</div>
-        <div className="ft-fc-ct-imgs">
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            {data2.map((item, index) => {
-              return (
-                <div key={index}>
-                  <FirstTeamItem
-                    img={item.img}
-                    number={item.number}
-                    name={item.name}
-                    position={item.position}
-                  />
-                </div>
-              );
-            })}
+        <div style={{position: 'relative'}}>
+          <div style={btnbx}>
+            <div onClick={handleRight1} style={btnItm}>
+              <RiArrowLeftSLine size={24} />
+            </div>
+            <div onClick={handleleft1} style={btnItm}>
+              <RiArrowRightSLine size={24} />
+            </div>
+          </div>
+          <div className="ft-fc-ct-imgs" ref={teamRef1}>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              {data2.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <FirstTeamItem
+                      img={item.img}
+                      number={item.number}
+                      name={item.name}
+                      position={item.position}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -123,6 +131,25 @@ const Squad = () => {
 };
 
 export default Squad;
+
+const btnbx = {
+  position: "absolute",
+  top: 180,
+  left: 0,
+  right: 0,
+  zIndex: 999,
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
+  margin: "0px 30px",
+};
+
+const btnItm = {
+  backgroundColor: '#e1eaf9',
+  padding: "16px 18px",
+  borderRadius: 10,
+};
 
 const gradientBx = {
   position: "absolute",

@@ -41,16 +41,53 @@
 .md-cnt-sct3 {
   display: none;
 }
-.dropdown-menu{
+.dropdown-menu {
   display: none;
 }
-.md-cnt-sct2{
+.md-cnt-sct2 {
   width: 180%;
   /* background-color: aqua; */
-  padding: 60px 0px 0px 60px
+  padding: 60px 0px 0px 60px;
 }
-.md-cnt-sct4{
-  padding: 20px 0px 0px 60px
+.md-cnt-sct4 {
+  padding: 20px 0px 0px 60px;
+}
+.md-cnt-dropdown-down {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  right: -20;
+  /* background-color: aqua; */
+  display: flex;
+  width: 50%;
+  margin-left: 280px;
+  padding-top: 80px;
+  /* padding-left: 300px; */
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  /* transition: max-height 0.6s ease-in-out; */
+  z-index: 1;
+}
+
+.dropdown-menu.open {
+  max-height: 650px; /* adjust based on your content's height */
+}
+
+.dropdown-item {
+  padding-bottom: 25px;
+  cursor: pointer;
+  color: rgb(138, 144, 161);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dropdown-item:hover {
+  color: blue;
+  transition: color 0.5s ease;
 }
 
 @media (max-width: 1580px) {
@@ -90,12 +127,12 @@
     padding: 40px 20px 250px 20px;
     border-bottom: 1.5px solid var(--lightgray1);
   }
-  .md-cnt-sct3 a:hover{
+  .md-cnt-sct3 a:hover {
     text-decoration: underline;
     color: blue;
     transition: color 0.3s ease-in-out;
   }
-  .md-cnt-sct4{
+  .md-cnt-sct4 {
     position: fixed;
     bottom: 0;
     width: 32%;
@@ -107,12 +144,22 @@
     position: relative;
     display: inline-block;
   }
+  .md-cnt-dropdown-down {
+    display: block;
+  }
+  .md-cnt-dropdown-right {
+    display: none;
+  }
   .dropdown-menu {
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 0px;
+    position: relative;
     display: flex;
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
     z-index: 1;
   }
 
@@ -120,15 +167,14 @@
     max-height: 650px; /* adjust based on your content's height */
   }
 
-  
   .dropdown-item {
     padding-bottom: 25px;
     cursor: pointer;
-    color: var(--darkblue1);
+    color: rgb(138, 144, 161);
     font-size: 14px;
     /* font-weight: 400; */
   }
-  
+
   .dropdown-item:hover {
     color: blue;
     transition: color 0.5s ease;
@@ -139,7 +185,7 @@
   .modal-content {
     width: 42%;
   }
-  .md-cnt-sct4{
+  .md-cnt-sct4 {
     width: 42%;
   }
 }
@@ -148,7 +194,7 @@
   .modal-content {
     width: 50%;
   }
-  .md-cnt-sct4{
+  .md-cnt-sct4 {
     width: 50%;
   }
 }
@@ -157,7 +203,7 @@
   .modal-content {
     width: 63%;
   }
-  .md-cnt-sct4{
+  .md-cnt-sct4 {
     width: 63%;
   }
 }
