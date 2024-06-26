@@ -64,6 +64,7 @@ const NavBar = ({ setShowLogin }) => {
     setShowModal(!showModal);
     setScrollDisabled(!scrollDisabled);
     setBackgroundColor(showModal ? 'transparent': '#c4e1fb')
+    setTest('absolute')
   };
 
   const handleCloseModal = () => {

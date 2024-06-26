@@ -89,19 +89,21 @@ const Posts = [
     title: "La Decimoquinta is now at Real Madrid Sport City"
   },
   // SECTION 3
+  // import manually from Templates->HomeSectionMedium->HomeMediumItem.jsx
   {
     type: "sct3a",
     link: "/post13",
     img: assets.LaDecimocuarta,
-    alt: "Forbes Club",
-    title: "Real Madrid named Forbes' most valuable club in world football for the third consecutive year"
+    alt: "",
+    title: ""
     },
+    // import manually from Templates->HomeSectionMedium->HomeMediumItem.jsx
   {
     type: "sct3a",
     link: "/post14",
     img: assets.ForbesClub,
-    alt: "Forbes Club",
-    title: "Real Madrid named Forbes' most valuable club in world football for the third consecutive year"
+    alt: "",
+    title: ""
     },
   {
     type: "sct3b",

@@ -1,10 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './Post13.css'
+import UnderConstruction from '../../../UnderConstruction'
 
 const Post13 = () => {
   return (
-    <div style={{marginTop: '200px'}}>Post13</div>
+    <div>
+      <UnderConstruction/>
+      <div style={{textAlign: 'center'}}>Post13</div>
+    </div>
   )
 }
 

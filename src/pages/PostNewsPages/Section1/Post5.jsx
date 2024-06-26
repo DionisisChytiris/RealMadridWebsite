@@ -53,8 +53,6 @@ const Post5 = () => {
           <img src={assetsHm.photo10} className='img10'alt=""/>
           <img src={assetsHm.photo11} className='img11'alt=""/>
           <div className='img12'/>
-          {/* <div className='img13'/> */}
-          {/* <img src={assetsHm.photo11} className='img11'alt=""/> */}
           <img src={assetsHm.photo11} className='img13'alt=""/>
         </div>
       </div>

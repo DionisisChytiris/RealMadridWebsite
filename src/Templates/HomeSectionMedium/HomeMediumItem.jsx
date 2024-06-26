@@ -18,7 +18,7 @@ const HomeMediumItem = ({link, img, alt, title}) => {
           </div>
         </div>
       </Link> */}
-      <Link to="/tickets">
+      <Link to="/post13">
         <div className="containerMediumItem">
           <div className="imgBoxM">
             <img src={assets.LaDecimocuarta} alt="" />
@@ -28,7 +28,7 @@ const HomeMediumItem = ({link, img, alt, title}) => {
           </div>
         </div>
       </Link>
-      <Link to="/tickets">
+      <Link to="/post14">
         <div className="containerMediumItem">
           <div className="imgBoxM">
             <img src={assets.img2} alt="" />
