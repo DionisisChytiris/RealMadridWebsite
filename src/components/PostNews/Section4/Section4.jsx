@@ -7,6 +7,7 @@ import HomeLrgImg from "../../../Templates/HomeSectionLarge/HomeLargeImg";
 import HomeSmallImg from "../../../Templates/HomeSectionSmall/HomeSmallImg";
 import { assets } from "../../../assets/assets";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import TrophyRecord from "../../TrophyTrackRecord/TrophyRecord";
 
 const Section4 = () => {
   const data1 = Posts.filter((item) => item.type == "section4a");
@@ -95,7 +96,9 @@ const Section4 = () => {
         <div className="sct4-title top">A legendary track record</div>
         <div className="middle-section">
           <img src={assets.TrophiesCollection} />
-          <div className="honours-table">hello</div>
+          <div className="honours-table">
+            <TrophyRecord/>
+          </div>
         </div>
       </div>
       <div className="sct4-title">New official Real Madrid 24/25 Home Kit</div>

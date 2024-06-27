@@ -14,3 +14,11 @@
     height: 9vh;
   }
 }
+@media (max-width: 680px) {
+  .homeContainer{
+    margin-top: -25px;
+  }
+  .bisector {
+    height: 9vh;
+  }
+}

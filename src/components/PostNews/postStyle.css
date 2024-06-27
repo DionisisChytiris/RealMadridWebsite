@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1020px) {
   .smallSection {
     padding-left: 7%;
     padding-right: 7%;
@@ -182,6 +182,7 @@
     padding-left: 3%;
     padding-right: 3%;
     overflow-x: hidden;
+    
   }
   /* .medium2Section{
     grid-template-columns: 250px 250px 250px 250px;

@@ -43,14 +43,7 @@
 
 @media (max-width: 880px) {
   .first-team-fc-btn-title {
-    margin-left: 8%;
-  }
-}
-
-
-@media (max-width: 680px) {
-  .first-team-fc-btn-title {
-    margin-left: 5%;
+    margin-left: 3%;
   }
   .news {
     width: 50px;
@@ -61,4 +54,8 @@
     height: 58px;
     margin-left: 10px;
   }
+}
+
+
+@media (max-width: 680px) {
 }

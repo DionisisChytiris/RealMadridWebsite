@@ -6,6 +6,9 @@ import { assetsft } from "../../../assets/FooterSponsors/assets";
 
 
 const Adidas = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <RealLogoTopSection text="Adidas" />

@@ -7,6 +7,9 @@ import { assetsft } from "../../../assets/FooterSponsors/assets";
 
 
 const Zegna = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <RealLogoTopSection text="Zegna" />

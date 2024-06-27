@@ -77,6 +77,22 @@
     margin: 20px auto;
     gap:20px;
   }
+  /* .sponsors1{
+    width: 80%;
+    height:200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  } */
+  .sponsors1{
+    width: 70%;
+    height:200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
   .sponsors1 img {
     width: 120px;
     height: 80px;
@@ -98,10 +114,27 @@
 }
 
 @media(max-width: 650px){
+  .sponsors{
+    width: 90%;
+  }
+  
+  .sponsors1 img {
+    width: 110px;
+    height: 70px;
+  }
   .sponsors2{
     /* width: 800px; */
     margin-bottom: 30px;
     gap: 18px;
+  }
+  .social{
+    width: 100%;
+
+    padding: 20px 0px;
+    /* background-color: aqua; */
+  }
+  .socialBox a{
+    padding-right: 15px;
   }
 }
 

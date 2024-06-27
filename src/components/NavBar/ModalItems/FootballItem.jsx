@@ -3,6 +3,7 @@
 import React,{useState} from 'react'
 import '../Modal.css'
 import { IoIosArrowDown,IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const FootballItem = ({
   op1,
@@ -14,6 +15,7 @@ const FootballItem = ({
   setOp6,
   setOp7,
   setOp8,
+  closeMd
 }) => {
     // const [isOpen, setIsOpen] = useState(false);
 
@@ -53,15 +55,15 @@ const FootballItem = ({
           </div>
         </div>
         <div className={`dropdown-menu ${op1 ? "open" : ""}`}>
-          <a href="/firstteam" className="dropdown-item">
+          <Link to="/firstteam" onClick={closeMd}className="dropdown-item">
             First Team
-          </a>
-          <a href="/womensteam" className="dropdown-item">
+          </Link>
+          <Link to="/womensteam" onClick={closeMd} className="dropdown-item">
             Women&apos;s Team
-          </a>
-          <a href="/academy" className="dropdown-item">
+          </Link>
+          <Link to="/academy" onClick={closeMd} className="dropdown-item">
             Academy
-          </a>
+          </Link>
         </div>
       </div>
   )

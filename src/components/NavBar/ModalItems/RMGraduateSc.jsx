@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "../Modal.css";
 import {  RMGraduateScData } from "../../../../data/NavBar/NavData";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const RMGraduateScItem = ({
   op7,
@@ -15,6 +16,7 @@ const RMGraduateScItem = ({
   setOp6,
   setOp7,
   setOp8,
+  closeMd
 }) => {
 
   return (
@@ -55,9 +57,9 @@ const RMGraduateScItem = ({
         {RMGraduateScData.map((item, index) => {
           return (
             <div key={index} style={{paddingBottom:20}}>
-              <a href={item.link} className="dropdown-item">
+              <Link to={item.link} onClick={closeMd}  className="dropdown-item">
                 {item.title}
-              </a>
+              </Link>
             </div>
           );
         })}

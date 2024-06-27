@@ -67,11 +67,14 @@
 
 @media (max-width: 880px) {
   .ft-fc-men-cnt {
-    padding-left: 5%;
+    padding-left: 0%;
+  }
+  .ft-fc-title{
+    padding-left: 3%;
   }
   .ft-fc-ct-imgs{
-    /* width: 1000px; */
-    overflow-x: hidden;
+    overflow-x: scroll;
+    padding-left: 3%;
 }
 
 }

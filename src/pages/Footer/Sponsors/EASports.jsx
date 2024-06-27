@@ -5,6 +5,9 @@ import RealLogoTopSection from "../../../Templates/RealLogoTopSection";
 import { assetsft } from "../../../assets/FooterSponsors/assets";
 
 const EASports = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <RealLogoTopSection text="EA Sports" />

@@ -6,6 +6,9 @@ import RealLogoTopSection from "../../../Templates/RealLogoTopSection";
 import { assetsft } from "../../../assets/FooterSponsors/assets";
 
 const Unicaja = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <RealLogoTopSection text="UnicajaBanco" />

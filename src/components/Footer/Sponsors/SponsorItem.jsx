@@ -6,18 +6,15 @@ import { Link } from "react-router-dom";
 const SponsorItem = ({ link, href, img, alt }) => {
   return (
     <>
-      {link ==='link' ? (
-        // <Link to={link}>
-        //   <img src={img} alt={alt} />
-        // </Link>
+      {/* {link ==='link' ? (
         <a href={href} target="_blank">
           <img src={img} alt={alt} />
         </a>
       ) : (
-        <a href={href}>
+      )} */}
+        <Link to={href}>
           <img src={img} alt={alt} />
-        </a>
-      )}
+        </Link>
     </>
   );
 };

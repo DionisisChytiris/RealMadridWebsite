@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "../Modal.css";
 import { TheClubData } from "../../../../data/NavBar/NavData";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const TheClubItem = ({
   op3,
@@ -15,6 +16,7 @@ const TheClubItem = ({
   setOp6,
   setOp7,
   setOp8,
+  closeMd
 }) => {
   // const [isOpen, setIsOpen] = useState(false);
   return (
@@ -55,9 +57,9 @@ const TheClubItem = ({
         {TheClubData.map((item, index) => {
           return (
             <div key={index} style={{paddingBottom:20}}>
-              <a href={item.link} className="dropdown-item">
+              <Link to={item.link} onClick={closeMd} className="dropdown-item">
                 {item.title}
-              </a>
+              </Link>
             </div>
           );
         })}

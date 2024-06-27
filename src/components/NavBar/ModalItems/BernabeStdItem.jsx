@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "../Modal.css";
 import { BernabeuStData } from "../../../../data/NavBar/NavData";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const BernabeuStdItem = ({
   op4,
@@ -15,6 +16,7 @@ const BernabeuStdItem = ({
   setOp6,
   setOp7,
   setOp8,
+  closeMd
 }) => {
 
   return (
@@ -55,9 +57,9 @@ const BernabeuStdItem = ({
         {BernabeuStData.map((item, index) => {
           return (
             <div key={index} style={{paddingBottom:20}}>
-              <a href={item.link} className="dropdown-item">
+              <Link to={item.link} onClick={closeMd} className="dropdown-item">
                 {item.title}
-              </a>
+              </Link>
             </div>
           );
         })}

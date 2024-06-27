@@ -5,6 +5,9 @@ import { assetsft } from "../../../assets/FooterSponsors/assets";
 
 
 const Cisco = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <RealLogoTopSection text="Cisco" />

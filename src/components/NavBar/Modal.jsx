@@ -61,6 +61,7 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
               <BasketballItem 
                 op2={op2}
@@ -71,21 +72,23 @@ const Modal = ({ show, onClose, open }) => {
                 setOp5={setOp5}
                 setOp6={setOp6}
                 setOp7={setOp7}
-                setOp8={setOp8} />
+                setOp8={setOp8} 
+                closeMd={onClose}
+                />
               {/* Schedule */}
               <div className="md-cnt-dropdown">
                 <div style={flexbox}>
-                  <a href="schedule" style={title} onClick={onClose}>
+                  <Link to="/schedule" style={title} onClick={onClose}>
                     Schedule
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* RMTV live */}
               <div className="md-cnt-dropdown">
                 <div style={flexbox}>
-                  <a href="rmtvlive" style={title} onClick={onClose}>
+                  <Link to="/rmtvlive" style={title} onClick={onClose}>
                     RMTV live
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -99,6 +102,7 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
               <BernabeuStdItem 
                 op4={op4}
@@ -110,6 +114,7 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
               <NewsItem 
                 op5={op5}
@@ -121,6 +126,7 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
               <FoundationRMItem 
                 op6={op6}
@@ -132,6 +138,7 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
               <RMGraduateScItem 
                 op7={op7}
@@ -143,13 +150,14 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
               {/* RM Next */}
               <div className="md-cnt-dropdown">
                 <div style={flexbox}>
-                  <a href="rmnext" style={title} onClick={onClose}>
+                  <Link to="/rmnext" style={title} onClick={onClose}>
                     RM Next
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -163,6 +171,7 @@ const Modal = ({ show, onClose, open }) => {
                 setOp6={setOp6}
                 setOp7={setOp7}
                 setOp8={setOp8}
+                closeMd={onClose}
               />
             </div>
             {/* Section 3 */}
@@ -180,7 +189,7 @@ const Modal = ({ show, onClose, open }) => {
                 />
               </div>
               <div>
-                <a href="/patrocinadores">See all sponsors</a>
+                <Link to="/patrocinadores" onClick={onClose}>See all sponsors</Link>
               </div>
             </div>
 

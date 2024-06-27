@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import "../Modal.css";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const BasketballItem = ({
   op2,
@@ -14,6 +15,7 @@ const BasketballItem = ({
   setOp6,
   setOp7,
   setOp8,
+  closeMd
 }) => {
   // const [isOpen, setIsOpen] = useState(false);
   return (
@@ -55,9 +57,9 @@ const BasketballItem = ({
         </div>
       </div>
       <div className={`dropdown-menu ${op2 ? "open" : ""}`}>
-        <a href="/basketfirstteam" className="dropdown-item">
+        <Link to="/basketfirstteam" onClick={closeMd} className="dropdown-item">
           Basketball First Team
-        </a>
+        </Link>
       </div>
     </div>
   );
