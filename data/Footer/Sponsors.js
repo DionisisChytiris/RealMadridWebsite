@@ -1,5 +1,4 @@
 import { assets } from "../../src/assets/footerImages/assets";
-// import { FaFacebook } from "react-icons/fa";
 
 export const DataSponsors = [
   {
