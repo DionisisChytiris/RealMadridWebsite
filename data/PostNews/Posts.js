@@ -84,8 +84,8 @@ const Posts = [
   {
     type: "c",
     link: "/post12",
-    img: '../../src/assets/_330781615089.webp',
-    alt: "Florentino Pérez",
+    img: assets.LaDecimocuarta,
+    alt: ":a Decimocuarta",
     title: "La Decimoquinta is now at Real Madrid Sport City"
   },
   // SECTION 3

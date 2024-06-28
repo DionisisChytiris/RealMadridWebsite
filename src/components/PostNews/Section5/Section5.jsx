@@ -7,6 +7,7 @@ import HomeMedium2 from "../../../Templates/HomeSectionMedium2/HomeMedium2";
 import HomeLrgImg from "../../../Templates/HomeSectionLarge/HomeLargeImg";
 import { FaArrowRight } from "react-icons/fa6";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import ImgBernabeu from '../../../assets/Bernabeu.png'
 
 const Section5 = () => {
   const data = Posts.filter((item) => item.type == "sct5a");
@@ -99,7 +100,8 @@ const Section5 = () => {
           <p className="txt-3">text 2</p>
           <p className="txt-4">text 4</p>
         </div>
-        <img className="bernabeu" src="../../../../src/assets/Bernabeu.png" />
+        <img className="bernabeu" src={ImgBernabeu} />
+        {/* <img className="bernabeu" src="../../../../src/assets/Bernabeu.png" /> */}
       </div>
     </div>
   );
