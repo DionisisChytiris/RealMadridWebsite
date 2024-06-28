@@ -98,12 +98,12 @@ const TrophyRecord = () => {
           </div>
         </div>
       </div>
-      <div
+      <div 
         style={{
           width: 200,
           height: 10,
           backgroundColor: "blue",
-          marginTop: 8,
+          marginTop: 0,
         }}
       ></div>
     </div>

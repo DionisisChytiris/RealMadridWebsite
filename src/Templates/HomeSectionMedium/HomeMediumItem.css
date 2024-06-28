@@ -56,6 +56,8 @@
     display: grid;
     grid-template-columns: 600px 600px;
     gap: 4vw;
+    width: 920px;
+    overflow: hidden;
   }
 }
 @media (max-width: 850px) {

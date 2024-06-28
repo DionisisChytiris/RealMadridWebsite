@@ -52,21 +52,27 @@
     margin-left: 0px;
   }
   .middle-section{
-    width: 85%;
+    width: 94%;
+    height: 600px;
   }
   .middle-section img {
     display: none;
   }
   .honours-table{
     width: 100%;
+    padding-left: 0px;
+  }
+  .sct4-title {
+    width: 94%;
+    font-size: 34px;
   }
 }
-
+/* 
 @media (max-width: 850px) {
   .middle-section{
-    width: 94%;
+    width: 97%;
   }
-}
+} */
 
 @media (max-width: 780px) {
   .middle-section img {
