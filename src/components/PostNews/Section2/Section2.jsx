@@ -30,10 +30,6 @@ const Section2 = () => {
   };
 
 
-  // useEffect(() => {
-  //   cardsRef.current.addEventListener("click", handleWheel1r);
-  //   cardsRef.current.addEventListener("click", handleWheel1l);
-  // }, []);
   return (
     <div className="cnt-bt-bg-sds">
       <div
