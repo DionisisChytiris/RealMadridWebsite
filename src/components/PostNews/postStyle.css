@@ -159,19 +159,31 @@
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
-    overflow-x: hidden;
-
+    /* overflow-x: hidden; */
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none /* Firefox */
   }
+  .smallSection::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
   .mediumSection {
     padding-left: 3%;
     padding-right: 3%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none /* Firefox */
   }
   .medium2Section {
     padding-left: 3%;
     padding-right: 3%;
     grid-template-columns: 250px 250px 250px 250px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none /* Firefox */
 
   }
+
 }
 
 @media (max-width: 660px) {
@@ -181,11 +193,8 @@
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
   }
-  /* .medium2Section{
-    grid-template-columns: 250px 250px 250px 250px;
-
-  } */
+ 
 }

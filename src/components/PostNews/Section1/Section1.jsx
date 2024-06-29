@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "../postStyle.css";
 import Posts from "../../../../data/PostNews/Posts";
 import HomeLrgImg from "../../../Templates/HomeSectionLarge/HomeLargeImg";
@@ -23,7 +23,6 @@ const Section1 = () => {
         behavior: "smooth",
       });
     }
-    // alert("right");
   };
   const handleWheel1l = (event) => {
     event.preventDefault();
@@ -34,7 +33,6 @@ const Section1 = () => {
         behavior: "smooth",
       });
     }
-    // alert("left");
   };
   const handleClick2r = (event) => {
     event.preventDefault();
@@ -45,7 +43,6 @@ const Section1 = () => {
         behavior: "smooth",
       });
     }
-    // alert("right");
   };
   const handleClick2l = (event) => {
     event.preventDefault();
@@ -56,21 +53,7 @@ const Section1 = () => {
         behavior: "smooth",
       });
     }
-    // alert("left");
   };
-
-  // const handleWheel2 = (event) => {
-  //   event.preventDefault();
-  //   cardsRef2.current.scrollLeft += event.deltaY;
-  // };
-
-  useEffect(() => {
-    // cardsRef2.current.addEventListener("wheel", handleWheel2);
-    // cardsRef1.current.addEventListener("click", handleWheel1r);
-    // cardsRef1.current.addEventListener("click", handleWheel1l);
-    // cardsRef2.current.addEventListener("click", handleClick2r);
-    // cardsRef2.current.addEventListener("click", handleClick2l);
-  }, []);
 
   return (
     <div>
@@ -145,20 +128,20 @@ const Section1 = () => {
             <RiArrowRightSLine size={24} />
           </div>
         </div>
-      <div className="smallSection sct1b" ref={cardsRef2}>
-        {data2.map((item, index) => {
-          return (
-            <div key={index}>
-              <HomeSmallImg
-                link={item.link}
-                img={item.img}
-                alt={item.alt}
-                title={item.title}
-              />
-            </div>
-          );
-        })}
-      </div>
+        <div className="smallSection sct1b" ref={cardsRef2}>
+          {data2.map((item, index) => {
+            return (
+              <div key={index}>
+                <HomeSmallImg
+                  link={item.link}
+                  img={item.img}
+                  alt={item.alt}
+                  title={item.title}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

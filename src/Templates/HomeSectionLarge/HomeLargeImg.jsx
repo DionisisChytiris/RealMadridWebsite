@@ -16,8 +16,8 @@ const HomeLrgImg = ({ link1, img, alt, title }) => {
     setIsHovering(false);
   };
   return (
-    <div className="container-lg-img">
         <Link to={link1}>
+    <div className="container-lg-img">
         <div
           className="part1"
           onMouseOver={handleMouseOver}
@@ -33,8 +33,8 @@ const HomeLrgImg = ({ link1, img, alt, title }) => {
         <div className="part2">
           <div className="title">{title}</div>
         </div>
-    </Link>
       </div>
+    </Link>
   );
 };
 
