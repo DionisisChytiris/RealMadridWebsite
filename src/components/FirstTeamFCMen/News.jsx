@@ -5,11 +5,14 @@ import HomeLrgImg from "../../Templates/HomeSectionLarge/HomeLargeImg";
 import HomeSmallImg from "../../Templates/HomeSectionSmall/HomeSmallImg";
 import HomeMedium2 from "../../Templates/HomeSectionMedium2/HomeMedium2";
 import Posts from "../../../data/PostNews/Posts";
+import FTNews from "../../../data/FirstTeam/FtNews";
 
 const News = () => {
-  const data1 = Posts.filter((item) => item.type == "sct1");
-  const data2 = Posts.filter((item) => item.type == "sct3");
-  const data3 = Posts.filter((item) => item.type == "c");
+  const data1 = FTNews.filter((item) => item.type == "newsMen1");
+  const data2 = FTNews.filter((item) => item.type == "newsMen2");
+  const data3 = FTNews.filter((item) => item.type == "newsMen3");
+  const data4 = FTNews.filter((item) => item.type == "newsMen4");
+  // const data4 = Posts.filter((item) => item.type == "c");
   return (
     <div className="ft-fc-men-cnt">
       <div>
@@ -41,7 +44,7 @@ const News = () => {
         })}
       </div>
       <div className="smallSection">
-        {data2.map((item, index) => {
+        {data3.map((item, index) => {
           return (
             <div key={index}>
               <HomeSmallImg
@@ -55,7 +58,7 @@ const News = () => {
         })}
       </div>
       <div className="medium2Section" >
-        {data3.map((item, index) => {
+        {data4.map((item, index) => {
           return (
             <div key={index}>
               <HomeMedium2

@@ -18,6 +18,12 @@ import Carvajal from './ND_CARVAJAL_ESPANA_ITALIA_01_GettyImages_2157880677.webp
 import Eurocopa from './EUROCOPA_2024.webp'
 import NinethAvv from './NinethAnniv.webp'
 import Alaba32 from './Alaba32.webp'
+import NdSerbiaInglaterra from './ND_SERBIA_INGLATERRA_BELLINGHAM.webp'
+import BrahimAdidas from './ND_Brahim_adidas_F50_00462.webp'
+import AlavesAlegria from './ND_RM_ALAVES_ALEGRIA_ARDA_1PC1739.webp'
+import EspanaCroacia from './ND_CARVAJAL_ESPANA_CROACIA_02_GettyImages_2157698984.webp'
+import soldierField from './ND_SOLDIER_FIELD_CHICAGO.webp'
+import Endrick from './ND_ENDRICK_GettyImages_1469857324.webp'
 
 export const assetsHm ={
     Trofeos,
@@ -39,5 +45,11 @@ export const assetsHm ={
     Carvajal,
     Eurocopa, 
     NinethAvv,
-    Alaba32
+    Alaba32,
+    NdSerbiaInglaterra,
+    BrahimAdidas,
+    AlavesAlegria,
+    EspanaCroacia,
+    soldierField,
+    Endrick
 }

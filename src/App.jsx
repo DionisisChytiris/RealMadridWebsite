@@ -58,6 +58,7 @@ import { Academy, BasketFirstTeam, BernabeuStadium, Contact, FanClubs, FirstTeam
 import { Abbott, Adidas, Adobe, Bantrab, BMW, Canon, Cantabria, CocaCola, Daktronics, Dubai, EASports, EasyMarkets, Emirates, HP, Hth, Mahou, Nivea, Palladium, Sanitas, Softtek, Solan, Unicaja, Zegna } from "./pages/Footer/Sponsors";
 import Cisco from "./pages/Footer/Sponsors/Cisco";
 import PlayStaion from "./pages/Footer/Sponsors/PlayStaion";
+import { ArdaGuler, BellinghamVictory, BrahimAdidas, CarvajalEuroopener } from "./pages/FirstTeamNews";
 
 function App() {
   const [showLogin, setShowLogin] = React.useState(false);
@@ -161,6 +162,10 @@ function App() {
           <Route path="/emirates" element={<Emirates/>}/>
           <Route path="/adidas" element={<Adidas/>}/>
           <Route path="/hp" element={<HP/>}/>
+          <Route path="/ardaguler" element={<ArdaGuler/>}/>
+          <Route path="/bellvictory" element={<BellinghamVictory/>}/>
+          <Route path="/brahimadidas" element={<BrahimAdidas/>}/>
+          <Route path="/careuropener" element={<CarvajalEuroopener/>}/>
         </Routes>
       </div>
       <Footer />
