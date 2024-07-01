@@ -54,7 +54,7 @@ const FTNews = [
   },
   {
     type: "newsMen3",
-    link: "/brahimadidas",
+    link: "/brahimadidasESP",
     img: assetsHm.BrahimAdidas,
     alt: "BrahimAdidas",
     title: "Discover the adidas F50 collection",

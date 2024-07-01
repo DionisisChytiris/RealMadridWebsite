@@ -7,6 +7,7 @@ import { NavData } from "../../../data/NavBar/NavData";
 import { assets } from "../../assets/assets";
 import { FaRegUser } from "react-icons/fa6";
 import Modal from "./Modal";
+import SignInModal from '../SignIn/SingInModal'
 
 const NavBar = ({ setShowLogin }) => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
@@ -47,7 +48,9 @@ const NavBar = ({ setShowLogin }) => {
   };
 
   const [showModal, setShowModal] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
   const [scrollDisabled, setScrollDisabled] = useState(false);
+  const [scrollDisabled1, setScrollDisabled1] = useState(false);
 
   useEffect(() => {
     if (scrollDisabled) {
@@ -59,6 +62,17 @@ const NavBar = ({ setShowLogin }) => {
       document.body.style.overflow = "auto";
     };
   }, [scrollDisabled]);
+
+  useEffect(() => {
+    if (scrollDisabled1) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [scrollDisabled1]);
 
   const handleOpenModal = () => {
     setShowModal(!showModal);
@@ -72,6 +86,11 @@ const NavBar = ({ setShowLogin }) => {
     setBackgroundColor('transparent')
   };
 
+  const handleSignIn = ()=>{
+    setShowSignIn(!showSignIn)
+    setScrollDisabled1(!scrollDisabled1);
+  }
+
   const [backgroundColor, setBackgroundColor] = useState('transparent');
   const menuIc={
     backgroundColor: backgroundColor,
@@ -79,15 +98,15 @@ const NavBar = ({ setShowLogin }) => {
     borderRadius: '8px',
   }
 
-  const [isFocused, setIsFocused] = useState(false);
+  // const [isFocused, setIsFocused] = useState(false);
 
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
+  // const handleFocus = () => {
+  //   setIsFocused(true);
+  // };
 
-  const handleBlur = () => {
-    setIsFocused(false);
-  };
+  // const handleBlur = () => {
+  //   setIsFocused(false);
+  // };
   return (
     <div style={navbarStyle} >
       <div className="nav1">
@@ -136,7 +155,8 @@ const NavBar = ({ setShowLogin }) => {
           </div>
         </div>
         <button
-          onClick={() => (setShowLogin(true), setScrollDisabled(true))}
+          // onClick={() => (setShowLogin(true), setScrollDisabled(true))}
+          onClick={handleSignIn}
           className="signIn"
         >
           <div>
@@ -148,6 +168,7 @@ const NavBar = ({ setShowLogin }) => {
           </div>
         </button>
       </div>
+        <SignInModal show={showSignIn}/>
     </div>
   );
 };
