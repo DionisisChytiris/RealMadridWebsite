@@ -36,6 +36,7 @@ import EuropeanCups from './ND_15_COPAS_TOUR___AV19296.webp'
 import LaDecimoquinta from './ND_CHAMPIONS_FINAL_BORUSSIA_RM_LEVANTAMIENTO_COPA_GRUPOGettyImages_2155639288.jpeg'
 import BernabeuMuseum from './BernabeuMuseum.jpg'
 import RealLogoGray from './reallogogray.png'
+import laundecima from './laundecima.webp'
 
 export const assets = {
     real_logo,
@@ -75,5 +76,6 @@ export const assets = {
     EuropeanCups,
     LaDecimoquinta,
     BernabeuMuseum,
-    RealLogoGray
+    RealLogoGray,
+    laundecima
 }

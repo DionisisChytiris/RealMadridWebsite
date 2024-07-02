@@ -5,6 +5,7 @@ import HomeMediumItem from "../../../Templates/HomeSectionMedium/HomeMediumItem"
 import Posts from "../../../../data/PostNews/Posts";
 import "../postStyle.css";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import NextEvents from "../../NextEvents/NextEvents";
 
 const Section3 = () => {
   const data1 = Posts.filter((item) => item.type == "sct3a");
@@ -50,13 +51,6 @@ const Section3 = () => {
     }
   };
 
-  // useEffect(() => {
-  //   cardsRef1.current.addEventListener("click", handleWheel1r);
-  //   cardsRef1.current.addEventListener("click", handleWheel1l);
-  //   cardsRef2.current.addEventListener("click", handleClick2r);
-  //   cardsRef2.current.addEventListener("click", handleClick2l);
-  // }, []);
-
   return (
     <div style={{ margin: "50px 0px" }}>
       <div className="cnt-bt-bg-sds">
@@ -79,8 +73,9 @@ const Section3 = () => {
             <RiArrowRightSLine size={24} />
           </div>
         </div>
-        <div className="mediumSection" ref={cardsRef1}>
-          <HomeMediumItem />
+        <div className="mediumSectionNext" ref={cardsRef1}>
+          {/* <HomeMediumItem /> */}
+          <NextEvents/>
         </div>
       </div>
 

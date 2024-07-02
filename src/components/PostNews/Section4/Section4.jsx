@@ -94,12 +94,12 @@ const Section4 = () => {
       </div>
       <div className="test-sct4-box">
         <div className="sct4-title top">A legendary track record</div>
-        <div className="middle-section">
+        {/* <div className="middle-section">
           <img src={assets.TrophiesCollection} />
           <div className="honours-table">
-            <TrophyRecord/>
           </div>
-        </div>
+        </div> */}
+            <TrophyRecord />
       </div>
       <div className="sct4-title">New official Real Madrid 24/25 Home Kit</div>
       

@@ -1,0 +1,113 @@
+.nxt-evnt{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--darkblue1)
+}
+.filter-tms{
+    font-size: 16px;
+    padding: 30px 0px;
+    color: blue ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+.filter-tms:hover{
+    text-decoration: underline;
+}
+.next-evnt-card-bx{
+    width: 400px;
+    height: 420px;
+    border-radius: 25px;
+    background-color: var(--darkblue3);
+}
+.next-evnt-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 38%;
+}
+.next-first-club{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.next-first-club img{
+    width: 55px;
+    height: 55px;
+}
+.nx-clb-tx{
+    font-size: 11px;
+    color: white;
+    padding-top: 8px
+}
+.next-evnt-bottom{
+    padding: 15px 0px 0px 20px ;
+    height: 62%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(100, 113, 228, 0.2) 0 0 2px 1px, rgba(136, 139, 148, 0.1) 0 4px 2px 1px;
+}
+.next-evnt-top-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.next-evnt-top-line p{
+    font-size: 12px;
+}
+.next-evnt-btm-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0px;
+}
+.next-evnt-btm-line-tx{
+    margin-left: 8px;
+    color: #384b71;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media(max-width: 1580px){
+    .next-evnt-card-bx{
+        width: 30%;
+        /* height: 400px; */
+    }
+}
+@media(max-width: 1380px){
+    .next-evnt-card-bx{
+        width: 30%;
+        /* height: 400px; */
+    }
+    .next-evnt-top{
+        /* height: 35%; */
+    }
+    .next-evnt-bottom{
+        /* height: 65%; */
+        border-radius: 25px;
+    }
+}
+@media(max-width: 1180px){
+    .next-evnt-card-bx{
+        width: 32%;
+        /* height: 400px; */
+    }
+    .next-evnt-top{
+        height: 35%;
+    }
+    .next-evnt-bottom{
+        height: 65%;
+        background-color: rgb(221, 211, 211);
+        border-radius: 25px;
+    }
+}
+@media(max-width: 1000px){
+    .next-evnt-card-bx{
+        width: 320px;
+        /* height: 400px; */
+    }
+}
