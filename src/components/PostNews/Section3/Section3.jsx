@@ -1,42 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import HomeMedium2 from "../../../Templates/HomeSectionMedium2/HomeMedium2";
-import HomeMediumItem from "../../../Templates/HomeSectionMedium/HomeMediumItem";
 import Posts from "../../../../data/PostNews/Posts";
 import "../postStyle.css";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import NextEvents from "../../NextEvents/NextEvents";
 
 const Section3 = () => {
-  const data1 = Posts.filter((item) => item.type == "sct3a");
-  const data2 = Posts.filter((item) => item.type == "sct3b");
+  const data = Posts.filter((item) => item.type == "sct3b");
 
-  const cardsRef1 = useRef(null);
   const cardsRef2 = useRef(null);
 
-  const handleWheel1r = (event) => {
-    event.preventDefault();
-    if (cardsRef1.current) {
-      cardsRef1.current.scrollBy({
-        left: -300, // Adjust the value as needed
-        behavior: "smooth",
-      });
-    }
-  };
-  const handleWheel1l = (event) => {
-    event.preventDefault();
-    if (cardsRef1.current) {
-      cardsRef1.current.scrollBy({
-        left: 300, // Adjust the value as needed
-        behavior: "smooth",
-      });
-    }
-  };
   const handleClick2r = (event) => {
     event.preventDefault();
     if (cardsRef2.current) {
       cardsRef2.current.scrollBy({
-        left: -200, // Adjust the value as needed
+        left: -200, 
         behavior: "smooth",
       });
     }
@@ -45,7 +24,7 @@ const Section3 = () => {
     event.preventDefault();
     if (cardsRef2.current) {
       cardsRef2.current.scrollBy({
-        left: 200, // Adjust the value as needed
+        left: 200, 
         behavior: "smooth",
       });
     }
@@ -53,31 +32,7 @@ const Section3 = () => {
 
   return (
     <div style={{ margin: "50px 0px" }}>
-      <div className="cnt-bt-bg-sds">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            position: "relative",
-            top: 220,
-            zIndex: 999,
-          }}
-          className="btns-ts"
-        >
-          {/* <div className="btns-ts"> */}
-          <div onClick={handleWheel1r} className="arw-sd-btn">
-            <RiArrowLeftSLine size={24} />
-          </div>
-          <div onClick={handleWheel1l} className="arw-sd-btn">
-            <RiArrowRightSLine size={24} />
-          </div>
-        </div>
-        <div className="mediumSectionNext" ref={cardsRef1}>
-          {/* <HomeMediumItem /> */}
-          <NextEvents/>
-        </div>
-      </div>
+      <NextEvents />
 
       <div>
         <div className="cnt-bt-bg-sds">
@@ -92,7 +47,6 @@ const Section3 = () => {
             }}
             className="btns-ts"
           >
-            {/* <div className="btns-ts"> */}
             <div onClick={handleClick2r} className="arw-sd-btn">
               <RiArrowLeftSLine size={24} />
             </div>
@@ -101,7 +55,7 @@ const Section3 = () => {
             </div>
           </div>
           <div className="medium2Section" ref={cardsRef2}>
-            {data2.map((item, index) => {
+            {data.map((item, index) => {
               return (
                 <div key={index}>
                   <HomeMedium2

@@ -25,7 +25,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     height: 38%;
 }
 .next-first-club{
@@ -71,43 +70,43 @@
     font-size: 15px;
     font-weight: 600;
 }
+.next-evnt-cards-cnt{
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 20px;
+    padding-left: 7%;
+}
 
 @media(max-width: 1580px){
     .next-evnt-card-bx{
-        width: 30%;
-        /* height: 400px; */
+        width: 300px;
     }
 }
 @media(max-width: 1380px){
     .next-evnt-card-bx{
-        width: 30%;
-        /* height: 400px; */
-    }
-    .next-evnt-top{
-        /* height: 35%; */
+        width: 280px;
     }
     .next-evnt-bottom{
-        /* height: 65%; */
         border-radius: 25px;
     }
 }
 @media(max-width: 1180px){
-    .next-evnt-card-bx{
-        width: 32%;
-        /* height: 400px; */
-    }
+    
     .next-evnt-top{
         height: 35%;
     }
     .next-evnt-bottom{
         height: 65%;
-        background-color: rgb(221, 211, 211);
         border-radius: 25px;
     }
 }
 @media(max-width: 1000px){
-    .next-evnt-card-bx{
-        width: 320px;
-        /* height: 400px; */
-    }
+   
+}
+@media(max-width: 660px){
+   
 }
