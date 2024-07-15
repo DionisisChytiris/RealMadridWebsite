@@ -10,7 +10,26 @@ const Copyright = () => {
   return (
     <div>
       <div className="copyright">
-        <div className="text">Copyright this is the </div>
+        <div className="text">
+          <Link
+            to="https://github.com/DionisisChytiris?tab=repositories"
+            target="_blank"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 10,
+              alignItems: "center",
+              backgroundColor: "#ccc",
+              padding: "4px 8px",
+              borderRadius: 20,
+            }}
+          >
+            <div>DionisisChytiris GitHub</div>
+            <div>
+              <FaGithub style={{ color: "#0f2145", fontSize: "16px" }} />
+            </div>
+          </Link>
+        </div>
         <div className="policies">
           <a className="a">SEE ALL SPONSORS</a>
           <LuDot style={{ color: "#0f2145", fontSize: "12px" }} />
@@ -30,7 +49,7 @@ const Copyright = () => {
           <img src={assets.real_logo} alt="logo" />
         </div>
         <div>
-          <a href='/tickets'>SEE ALL SPONSORS</a>
+          <a href="/tickets">SEE ALL SPONSORS</a>
         </div>
         <div className="sm-sc-policies">
           <a>Legal notice</a>
@@ -44,9 +63,22 @@ const Copyright = () => {
           <a>realmadrid.com</a>
         </div>
         <div className="text">
-          <Link to='https://github.com/DionisisChytiris?tab=repositories' style={{display: 'flex',flexDirection: 'row', gap: 10, alignItems: 'center', backgroundColor: '#ccc',padding: '4px 8px', borderRadius: 20}}>
+          <Link
+            to="https://github.com/DionisisChytiris?tab=repositories"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 10,
+              alignItems: "center",
+              backgroundColor: "#ccc",
+              padding: "4px 8px",
+              borderRadius: 20,
+            }}
+          >
             <div>DionisisChytiris GitHub</div>
-            <div><FaGithub style={{ color: "#0f2145", fontSize: "16px" }}/></div>
+            <div>
+              <FaGithub style={{ color: "#0f2145", fontSize: "16px" }} />
+            </div>
           </Link>
         </div>
       </div>
