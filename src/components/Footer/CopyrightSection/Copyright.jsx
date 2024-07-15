@@ -3,6 +3,8 @@ import React from "react";
 import "./Copyright.css";
 import { LuDot } from "react-icons/lu";
 import { assets } from "../../../assets/assets";
+import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Copyright = () => {
   return (
@@ -41,7 +43,12 @@ const Copyright = () => {
           <LuDot style={{ color: "#0f2145", fontSize: "12px" }} />
           <a>realmadrid.com</a>
         </div>
-        <div className="text">Copyright this is the </div>
+        <div className="text">
+          <Link to='https://github.com/DionisisChytiris?tab=repositories' style={{display: 'flex',flexDirection: 'row', gap: 10, alignItems: 'center', backgroundColor: '#ccc',padding: '4px 8px', borderRadius: 20}}>
+            <div>DionisisChytiris GitHub</div>
+            <div><FaGithub style={{ color: "#0f2145", fontSize: "16px" }}/></div>
+          </Link>
+        </div>
       </div>
     </div>
   );
