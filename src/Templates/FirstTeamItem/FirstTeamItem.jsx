@@ -74,9 +74,9 @@ const numName = {
 };
 
 const imgStyle = {
-  width: "100px", // or whatever fits your layout
-  height: "100px",
+  width: "100%", // or whatever fits your layout
+  height: "100%",
   objectFit: "cover",
   borderRadius: "10px",
-  backgroundColor: 'yellow'
+  // backgroundColor: 'yellow'
 };
