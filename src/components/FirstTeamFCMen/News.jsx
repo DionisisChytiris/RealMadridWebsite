@@ -7,7 +7,7 @@ import HomeMedium2 from "../../Templates/HomeSectionMedium2/HomeMedium2";
 import Posts from "../../../data/PostNews/Posts";
 import FTNews from "../../../data/FirstTeam/FtNews";
 
-const News = () => {
+const Squad = () => {
   const data1 = FTNews.filter((item) => item.type == "newsMen1");
   const data2 = FTNews.filter((item) => item.type == "newsMen2");
   const data3 = FTNews.filter((item) => item.type == "newsMen3");
@@ -75,4 +75,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Squad;

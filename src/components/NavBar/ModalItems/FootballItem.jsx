@@ -56,10 +56,10 @@ const FootballItem = ({
         </div>
         <div className={`dropdown-menu ${op1 ? "open" : ""}`}>
           <Link to="/firstteam" onClick={closeMd}className="dropdown-item">
-            First Team
+            Mens&apos; First Team
           </Link>
           <Link to="/womensteam" onClick={closeMd} className="dropdown-item">
-            Women&apos;s Team
+            Women&apos;s First Team
           </Link>
           <Link to="/academy" onClick={closeMd} className="dropdown-item">
             Academy

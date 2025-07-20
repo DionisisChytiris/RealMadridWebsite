@@ -6,7 +6,7 @@ import FTMenFC from "../../../data/FirstTeam/FTMenFC";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import axios from "axios";
 
-const Squad = () => {
+const News = () => {
   // const data1 = FTMenFC.filter((item) => item.position == "Goalkeeper");
   // const data2 = FTMenFC.filter((item) => item.position == "Defender");
   // const data3 = FTMenFC.filter((item) => item.position == "Midfielder");
@@ -220,7 +220,7 @@ const Squad = () => {
   );
 };
 
-export default Squad;
+export default News;
 
 const btnbx = {
   position: "absolute",

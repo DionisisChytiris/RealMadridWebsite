@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {useEffect} from 'react'
 import UnderConstruction from '../../UnderConstruction';
+import img from '../../assets/underConstruction/constr5.jpg'
 
 const Shop = () => {
   useEffect(() => {
@@ -8,8 +9,9 @@ const Shop = () => {
   }, []);
   return (
     <div style={container}>
-      <div style={title}>Tickets Page</div>
-      <UnderConstruction/>
+      <img src={img} className="under-constr-img"/>
+      <div className="under-constr-title">Shop Page</div>
+      <UnderConstruction />
     </div>
   )
 }
