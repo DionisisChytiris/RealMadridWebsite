@@ -10,29 +10,29 @@ import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 const NextEvents = () => {
   const cardsRef = useRef(null);
   const [showFilter, setShowFilter] = useState(false);
-  const [scrollDisabled, setScrollDisabled] = useState(false);
+  // const [scrollDisabled, setScrollDisabled] = useState(false);
 
   
-  useEffect(() => {
-    if (scrollDisabled) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [scrollDisabled]);
+  // useEffect(() => {
+  //   if (scrollDisabled) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //   }
+  //   return () => {
+  //     document.body.style.overflow = "auto";
+  //   };
+  // }, [scrollDisabled]);
   
   const handleOpenFilter = () => {
     setShowFilter(!showFilter);
-    setScrollDisabled(!scrollDisabled);
+    // setScrollDisabled(!scrollDisabled);
     // setBackgroundColor(showFilter ? 'transparent': '#c4e1fb')
   };
 
   const handleCloseFilter = () => {
     setShowFilter(false);
-    setScrollDisabled(false);
+    // setScrollDisabled(false);
     // setBackgroundColor('transparent')
   };
 

@@ -1,85 +1,51 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import './styles/Madridistas.css'
+import  { useEffect, useState } from "react";
+import './styles/Madridistas.css';
 import axios from "axios";
 
-const baseURL = "https://real-madrid-team-fast-api.vercel.app/"
+const baseURL = "https://real-madrid-team-fast-api.vercel.app/";
 
 const Madridistas = () => {
-  const [post, setPost] = useState(
-    [
-      {
-        position: '',
-        firstname: ''
-      }
-    ]
-  )
+  const [players, setPlayers] = useState([]);
+  const [isClicked, setIsClicked] = useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://real-madrid-team-fast-api.vercel.app/');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        setPost(response.data);
-        console.log(response.data)
-        // setLoading(false);
+        const response = await axios.get(baseURL);
+        setPlayers(response.data);
+        console.log(response.data);
       } catch (err) {
-        console.log(err)
-        // setError(err.message);
-        // setLoading(false);
+        console.error("Error fetching players:", err);
       }
-    }
-      fetchData()
-  },[])
+    };
 
-  // if (!post) return null;
-
+    fetchData();
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [isClicked, setIsClicked] = useState(false);
-
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
 
-
   return (
-    <>
-  
-    <div style={container}>
-      <div 
-       className={`box ${isClicked ? 'clicked' : ''}`}
+    <div className="madridistas-container">
+      <div
+        className={`box ${isClicked ? 'clicked' : ''}`}
         onClick={handleClick}
-        // style={{padding: '40px', backgroundColor: 'lightgreen',transition:' backgroundColor 0.3s ease, transform 0.3s ease'}}
       >
-       {post.map((item) => (
-          <div key={item.id}> 
+        {players.map((item) => (
+          <div key={item.id}>
             <div>Position: {item.position}</div>
-            <div>Name: {item.firstname}</div>
-            <div>Name: {item.firstname}</div>
+            <div>Name: {item.firstname} {item.surname}</div>
+            <hr />
           </div>
         ))}
       </div>
-    
     </div>
-      </>
   );
 };
 
 export default Madridistas;
-
-const container = {
-  width: "80%",
-  height: "100vh",
-  backgroundColor: "lightgray",
-  margin: "auto",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  marginBottom: "30px",
-};
