@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useState,useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef , useCallback} from "react";
 import "./StylesFT.css";
 import FirstTeamItem from "../../Templates/FirstTeamItem/FirstTeamItem";
 import FTMenFC from "../../../data/FirstTeam/FTMenFC";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
-import axios from 'axios'
+import axios from "axios";
 
 const Squad = () => {
   // const data1 = FTMenFC.filter((item) => item.position == "Goalkeeper");
@@ -13,22 +13,32 @@ const Squad = () => {
   // const data4 = FTMenFC.filter((item) => item.position == "Forward");
 
   const [players, setPlayers] = useState([]);
-  const getPlayerImage = (firstname, surname) => {
+  // const getPlayerImage = (firstname, surname) => {
+  //   const filename = `${firstname}_${surname}`.toLowerCase().replace(/ /g, "_");
+  //   return `/images/players/${filename}.png`;
+  // };
+
+  const getPlayerImage = useCallback((firstname, surname) => {
   const filename = `${firstname}_${surname}`.toLowerCase().replace(/ /g, "_");
   return `/images/players/${filename}.png`;
-};
+}, []);
 
   useEffect(() => {
     axios
-      .get("https://real-madrid-team-fast-api.vercel.app/")
+      .get("https://real-madrid-team-fast-api.vercel.app/players/")
       .then((res) => setPlayers(res.data))
       .catch((err) => console.error("Failed to fetch players:", err));
   }, []);
+
+  const knownPositions = ["Goalkeeper", "Defender", "Midfielder", "Forward"];
 
   const data1 = players.filter((item) => item.position === "Goalkeeper");
   const data2 = players.filter((item) => item.position === "Defender");
   const data3 = players.filter((item) => item.position === "Midfielder");
   const data4 = players.filter((item) => item.position === "Forward");
+  const data5 = players.filter(
+    (item) => !knownPositions.includes(item.position)
+  );
 
   const teamRef1 = useRef(null);
   const teamRef2 = useRef();
@@ -60,11 +70,13 @@ const Squad = () => {
         <div className="ft-fc-ct-imgs">
           <div style={{ display: "flex", flexDirection: "row" }}>
             {data1.map((item, index) => {
+               console.log(item.firstname, item.surname, "img:", item.img);
               return (
-                <div key={index}>
+                <div  key={item._id || item.id}>
                   <FirstTeamItem
                     // img={item.img}
-                     img={getPlayerImage(item.firstname, item.surname)}
+                    img={item.img || getPlayerImage(item.firstname, item.surname)}
+                    // img={getPlayerImage(item.firstname, item.surname)}
                     number={item.number}
                     name={item.surname}
                     position={item.position}
@@ -92,9 +104,11 @@ const Squad = () => {
             <div style={{ display: "flex", flexDirection: "row" }}>
               {data2.map((item, index) => {
                 return (
-                  <div key={index}>
+                  <div  key={item._id || item.id}>
                     <FirstTeamItem
-                      img={item.img}
+                    // img={item.img}
+                    img={item.img || getPlayerImage(item.firstname, item.surname)}
+                      // img={getPlayerImage(item.firstname, item.surname)}
                       number={item.number}
                       name={item.surname}
                       position={item.position}
@@ -113,9 +127,11 @@ const Squad = () => {
           <div style={{ display: "flex", flexDirection: "row" }}>
             {data3.map((item, index) => {
               return (
-                <div key={index}>
+                <div  key={item._id || item.id}>
                   <FirstTeamItem
-                    img={item.img}
+                  // img={item.img}
+                  img={item.img || getPlayerImage(item.firstname, item.surname)}
+                    // img={getPlayerImage(item.firstname, item.surname)}
                     number={item.number}
                     name={item.surname}
                     position={item.position}
@@ -133,10 +149,35 @@ const Squad = () => {
           <div style={{ display: "flex", flexDirection: "row" }}>
             {data4.map((item, index) => {
               return (
-                <div key={index}>
+                <div  key={item._id || item.id}>
                   <FirstTeamItem
-                    img={item.img}
+                  // img={item.img}
+                  img={item.img || getPlayerImage(item.firstname, item.surname)}
+                    // img={getPlayerImage(item.firstname, item.surname)}
                     number={item.number}
+                    name={item.surname}
+                    position={item.position}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      {/* Coach and rest */}
+      <div className="ft-fc-sct1">
+        <div className="ft-fc-title">Rest of Staff</div>
+        <div className="ft-fc-ct-imgs">
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            {data5.map((item, index) => {
+              return (
+                <div  key={item._id || item.id}>
+                  <FirstTeamItem
+                  // img={item.img}
+                  img={item.img || getPlayerImage(item.firstname, item.surname)}
+                    // img={getPlayerImage(item.firstname, item.surname)}
+                    // number={item.number}
+                    // name={item.firstname}
                     name={item.surname}
                     position={item.position}
                   />
