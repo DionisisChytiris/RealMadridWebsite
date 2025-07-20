@@ -1,15 +1,34 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef } from "react";
+import React, { useState,useEffect, useRef } from "react";
 import "./StylesFT.css";
 import FirstTeamItem from "../../Templates/FirstTeamItem/FirstTeamItem";
 import FTMenFC from "../../../data/FirstTeam/FTMenFC";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import axios from 'axios'
 
 const Squad = () => {
-  const data1 = FTMenFC.filter((item) => item.position == "Goalkeeper");
-  const data2 = FTMenFC.filter((item) => item.position == "Defender");
-  const data3 = FTMenFC.filter((item) => item.position == "Midfielder");
-  const data4 = FTMenFC.filter((item) => item.position == "Forward");
+  // const data1 = FTMenFC.filter((item) => item.position == "Goalkeeper");
+  // const data2 = FTMenFC.filter((item) => item.position == "Defender");
+  // const data3 = FTMenFC.filter((item) => item.position == "Midfielder");
+  // const data4 = FTMenFC.filter((item) => item.position == "Forward");
+
+  const [players, setPlayers] = useState([]);
+  const getPlayerImage = (firstname, surname) => {
+  const filename = `${firstname}_${surname}`.toLowerCase().replace(/ /g, "_");
+  return `/images/players/${filename}.png`;
+};
+
+  useEffect(() => {
+    axios
+      .get("https://real-madrid-team-fast-api.vercel.app/")
+      .then((res) => setPlayers(res.data))
+      .catch((err) => console.error("Failed to fetch players:", err));
+  }, []);
+
+  const data1 = players.filter((item) => item.position === "Goalkeeper");
+  const data2 = players.filter((item) => item.position === "Defender");
+  const data3 = players.filter((item) => item.position === "Midfielder");
+  const data4 = players.filter((item) => item.position === "Forward");
 
   const teamRef1 = useRef(null);
   const teamRef2 = useRef();
@@ -44,9 +63,10 @@ const Squad = () => {
               return (
                 <div key={index}>
                   <FirstTeamItem
-                    img={item.img}
+                    // img={item.img}
+                     img={getPlayerImage(item.firstname, item.surname)}
                     number={item.number}
-                    name={item.name}
+                    name={item.surname}
                     position={item.position}
                   />
                 </div>
@@ -59,7 +79,7 @@ const Squad = () => {
 
       <div className="ft-fc-sct1">
         <div className="ft-fc-title">Defender</div>
-        <div style={{position: 'relative'}}>
+        <div style={{ position: "relative" }}>
           <div style={btnbx}>
             <div onClick={handleRight1} style={btnItm}>
               <RiArrowLeftSLine size={24} />
@@ -76,7 +96,7 @@ const Squad = () => {
                     <FirstTeamItem
                       img={item.img}
                       number={item.number}
-                      name={item.name}
+                      name={item.surname}
                       position={item.position}
                     />
                   </div>
@@ -97,7 +117,7 @@ const Squad = () => {
                   <FirstTeamItem
                     img={item.img}
                     number={item.number}
-                    name={item.name}
+                    name={item.surname}
                     position={item.position}
                   />
                 </div>
@@ -117,7 +137,7 @@ const Squad = () => {
                   <FirstTeamItem
                     img={item.img}
                     number={item.number}
-                    name={item.name}
+                    name={item.surname}
                     position={item.position}
                   />
                 </div>
@@ -146,7 +166,7 @@ const btnbx = {
 };
 
 const btnItm = {
-  backgroundColor: '#e1eaf9',
+  backgroundColor: "#e1eaf9",
   padding: "16px 18px",
   borderRadius: 10,
 };

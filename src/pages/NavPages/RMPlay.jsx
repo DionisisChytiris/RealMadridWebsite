@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, {useEffect} from 'react'
+import UnderConstruction from '../../UnderConstruction';
 
 const RMPlay = () => {
   useEffect(() => {
@@ -7,7 +8,8 @@ const RMPlay = () => {
   }, []);
   return (
     <div style={container}>
-      <div>RM Play</div>
+      <div style={title}>RMPlay Page</div>
+      <UnderConstruction/>
     </div>
   )
 }
@@ -24,4 +26,10 @@ const container = {
   alignItems: 'center',
   justifyContent: 'center',
   marginBottom: '30px'
+}
+
+const title={
+  position: 'absolute',
+  top: '40%',
+  fontSize: '25px'
 }

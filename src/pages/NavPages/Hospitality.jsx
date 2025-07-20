@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, {useEffect} from 'react'
+import UnderConstruction from '../../UnderConstruction';
 
 const Hospitality = () => {
   useEffect(() => {
@@ -7,7 +8,8 @@ const Hospitality = () => {
   }, []);
   return (
     <div style={container}>
-      <div>Hospitality</div>
+      <div style={title}>Hospitality Page</div>
+      <UnderConstruction/>
     </div>
   )
 }
@@ -24,4 +26,10 @@ const container = {
   alignItems: 'center',
   justifyContent: 'center',
   marginBottom: '30px'
+}
+
+const title={
+  position: 'absolute',
+  top: '40%',
+  fontSize: '25px'
 }

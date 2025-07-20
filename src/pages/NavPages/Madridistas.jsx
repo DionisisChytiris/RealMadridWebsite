@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles/Madridistas.css";
 import axios from "axios";
+import UnderConstruction from "../../UnderConstruction";
 
 const baseURL = "https://real-madrid-team-fast-api.vercel.app/";
 
@@ -33,30 +34,33 @@ useEffect(() => {
   };
 
   return (
-    <>
-      <div style={container}>
-        <div
-          className={`box ${isClicked ? "clicked" : ""}`}
-          onClick={handleClick}
-          // style={{padding: '40px', backgroundColor: 'lightgreen',transition:' backgroundColor 0.3s ease, transform 0.3s ease'}}
-        >
-          {players.length === 0 ? (
-            <p>Loading players...</p>
-          ) : (
-            players.map((item) => (
-              <div key={item.id}>
-                <div>Position: {item.position}</div>
-                <div>
-                  Name: {item.firstname} {item.surname}
-                </div>
-                <hr />
-              </div>
-            ))
-          )}
-        </div>
-        <div>hello</div>
-      </div>
-    </>
+    // <>
+    //   <div style={container}>
+    //     <div
+    //       className={`box ${isClicked ? "clicked" : ""}`}
+    //       onClick={handleClick}
+    //     >
+    //       {players.length === 0 ? (
+    //         <p>Loading players...</p>
+    //       ) : (
+    //         players.map((item) => (
+    //           <div key={item.id}>
+    //             <div>Position: {item.position}</div>
+    //             <div>
+    //               Name: {item.firstname} {item.surname}
+    //             </div>
+    //             <hr />
+    //           </div>
+    //         ))
+    //       )}
+    //     </div>
+    //     <div>hello</div>
+    //   </div>
+    // </>
+     <div style={container}>
+      <div style={title}>Madridistas Page</div>
+      <UnderConstruction/>
+    </div>
   );
 };
 
@@ -72,3 +76,10 @@ const container = {
   justifyContent: "center",
   marginBottom: "30px",
 };
+
+
+const title={
+  position: 'absolute',
+  top: '40%',
+  fontSize: '25px'
+}
