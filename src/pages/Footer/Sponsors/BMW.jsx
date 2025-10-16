@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import "./styles/main.css";
 import RealLogoTopSection from "../../../Templates/RealLogoTopSection";

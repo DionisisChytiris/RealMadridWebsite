@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 export {default as Mahou} from './Mahou'
 export {default as Dubai} from './Dubai'
 export {default as BMW} from './BMW'
@@ -8,7 +9,7 @@ export {default as Cantabria} from './Cantabria'
 export {default as EasyMarkets} from './EasyMarkets'
 export {default as Adobe} from './Adobe'
 export {default as Zegna} from './Zegna'
-export {default as cisco} from './Cisco'
+export {default as Cisco} from './Cisco'
 export {default as Palladium} from './Palladium'
 export {default as Daktronics} from './Daktronics'
 export {default as Softtek} from './Softtek'

@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable no-unused-vars */
 import React from "react";
 import "./styles/main.css";
 import RealLogoTopSection from "../../../Templates/RealLogoTopSection";
@@ -19,9 +17,9 @@ const HP = () => {
               <img src={assetsft.HP} alt="HP" />
             </div>
             <div className="inside-txt-bx1">
-              HP become the club's technology partner, and the first brand in
+HP become the club&apos;s technology partner, and the first brand in
               our 121-year history to display its logo on the Real Madrid shirt
-              sleeve, both for the men's and women's first teams and academy
+sleeve, both for the men&apos;s and women&apos;s first teams and academy
               sides.
             </div>
             <div className="inside-txt-bx5">

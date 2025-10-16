@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
@@ -53,7 +51,6 @@ import {
   Post9,
 } from "./pages/PostNewsPages";
 import SignIn from "./components/SignIn/SignIn";
-import MockNotice from "./MockNotice";
 import { Academy, BasketFirstTeam, BernabeuStadium, Contact, FanClubs, FirstTeam, FoundationRM, History, Honors, News, RealMadridCity, RMGraduateSchool, RMNext, RMTVlive, Schedule, TheClub, Transparency, Values, WiZinkCenter, WomensTeam } from "./pages/Footer/MainFooterPages";
 import { Abbott, Adidas, Adobe, Bantrab, BMW, Canon, Cantabria, CocaCola, Daktronics, Dubai, EASports, EasyMarkets, Emirates, HP, Hth, Mahou, Nivea, Palladium, Sanitas, Softtek, Solan, Unicaja, Zegna } from "./pages/Footer/Sponsors";
 import Cisco from "./pages/Footer/Sponsors/Cisco";
