@@ -63,3 +63,4 @@ GitHub Actions workflow runs lint, tests, and build on push/PR (`.github/workflo
 ## Notes
 - If you change the repo or domain, no Vite `base` is required for Vercel.
 - Update the "Live" URL above once confirmed.
+ ----
